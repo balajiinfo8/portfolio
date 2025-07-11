@@ -1,0 +1,40 @@
+body {
+  font-family: 'Times New Roman', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.intro {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.skill {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about, .contact {
+  background-color: #fff;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
