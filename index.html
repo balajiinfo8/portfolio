@@ -158,6 +158,24 @@
       text-decoration: underline;
     }
 
+    /* Screenshots Gallery */
+    .screenshots {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .screenshots img {
+      border-radius: 5px;
+      transition: transform 0.2s ease;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.05);
+    }
+
     /* Contact Section */
     .contact {
       background-color: #fff;
@@ -255,7 +273,18 @@
     <div class="project">
       <h3>3. Flutter Web Todo App</h3>
       <p>A cross-platform web app built with Flutter Web for managing tasks online.</p>
-      <a href="https://your-flutter-todo-link.netlify.app" target="_blank">Live Demo</a>
+
+      <!-- Clickable Screenshots -->
+      <div class="screenshots">
+        <a href="images/flutter_screenshot1.png" target="_blank">
+          <img src="images/flutter_screenshot1.png" alt="Flutter Web Todo Screenshot 1" width="200">
+        </a>
+        <a href="images/flutter_screenshot2.png" target="_blank">
+          <img src="images/flutter_screenshot2.png" alt="Flutter Web Todo Screenshot 2" width="200">
+        </a>
+      </div>
+
+      <a href="https://github.com/balajiinfo8/flutter.git" target="_blank">Source Code</a>
     </div>
   </section>
 
