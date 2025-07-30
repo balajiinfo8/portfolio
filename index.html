@@ -158,22 +158,44 @@
       text-decoration: underline;
     }
 
-    /* Screenshots Gallery */
+    /* Screenshots Gallery with View Button */
     .screenshots {
       display: flex;
-      gap: 10px;
+      gap: 20px;
       justify-content: center;
       margin: 10px 0;
       flex-wrap: wrap;
     }
 
-    .screenshots img {
+    .screenshot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .screenshot img {
       border-radius: 5px;
       transition: transform 0.2s ease;
     }
 
-    .screenshots img:hover {
+    .screenshot img:hover {
       transform: scale(1.05);
+    }
+
+    .view-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background-color: #0077cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .view-btn:hover {
+      background-color: #005fa3;
     }
 
     /* Contact Section */
@@ -274,14 +296,17 @@
       <h3>3. Flutter Web Todo App</h3>
       <p>A cross-platform web app built with Flutter Web for managing tasks online.</p>
 
-      <!-- Clickable Screenshots -->
+      <!-- Screenshot Gallery with View Buttons -->
       <div class="screenshots">
-        <a href="images/flutter_screenshot1.png" target="_blank">
+        <div class="screenshot">
           <img src="images/flutter_screenshot1.png" alt="Flutter Web Todo Screenshot 1" width="200">
-        </a>
-        <a href="images/flutter_screenshot2.png" target="_blank">
+          <a class="view-btn" href="images/flutter_screenshot1.png" target="_blank">View Full</a>
+        </div>
+
+        <div class="screenshot">
           <img src="images/flutter_screenshot2.png" alt="Flutter Web Todo Screenshot 2" width="200">
-        </a>
+          <a class="view-btn" href="images/flutter_screenshot2.png" target="_blank">View Full</a>
+        </div>
       </div>
 
       <a href="https://github.com/balajiinfo8/flutter.git" target="_blank">Source Code</a>
