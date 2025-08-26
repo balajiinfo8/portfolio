@@ -1,0 +1,335 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji V - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="intro">
+    <h1>I'm Balaji.</h1>
+    <h2>A Web Developer</h2>
+  </section>
+
+  <section class="skills">
+    <div class="skill">
+      <h3>Frontend</h3>
+      <p>I love building clean and simple interfaces using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="skill">
+      <h3>Backend</h3>
+      <p>I enjoy working with Python,Django, MySQL, and REST APIs to build powerful backend systems.</p>
+    </div>
+    <div class="skill">
+        <h3>Problem Solving</h3>
+        <p>I regularly solve problems on GeeksforGeeks and LeedCode to improve my skills in Data Structures and Algorithms (DSA).</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate Python Django developer who loves solving real-world problems and always looking to level up.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Let's build something cool. Reach out via email!</p>
+    <p><a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
+  </section>
+</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balaji V - Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Intro Section */
+        .intro {
+            background: linear-gradient(135deg, #ffd700, #ffcc00);
+            color: #000;
+            padding: 120px 20px;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .intro h2 {
+            font-weight: normal;
+            font-size: 1.8rem;
+        }
+
+        /* Skills Section */
+        .skills h2 {
+            margin-bottom: 30px;
+        }
+
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 280px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 8px;
+            padding: 40px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #f5f5f5;
+        }
+
+        .project {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Screenshots Gallery with View Button */
+        .screenshots {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .screenshot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .screenshot img {
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .screenshot img:hover {
+            transform: scale(1.05);
+        }
+
+        .view-btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            background-color: whitesmoke;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .view-btn:hover {
+            background-color: whitesmoke;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #fff;
+        }
+
+        .contact a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skill-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Intro Section -->
+    <section class="intro">
+        <h1>I'm Balaji.</h1>
+        <h2>A Web Developer</h2>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <h3>Frontend</h3>
+                <p>I love building clean and simple interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="skill">
+                <h3>Backend</h3>
+                <p>I enjoy working with Python, Django, MySQL, and REST APIs to build powerful backend systems.</p>
+            </div>
+            <div class="skill">
+                <h3>Problem Solving</h3>
+                <p>I regularly solve problems on GeeksforGeeks and LeetCode to improve my skills in Data Structures and
+                    Algorithms (DSA).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate Python Django developer who loves solving real-world problems and always looking to level
+            up.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>1. Todo App (Python Django + MySQL)</h3>
+            <p>A web application to manage daily tasks with CRUD operations and user authentication.</p>
+            <a href="https://github.com/balajiinfo8/Django-Project.git" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>2. Portfolio Website</h3>
+            <p>This responsive website showcases my skills, projects, and contact information using HTML, CSS, and
+                JavaScript.</p>
+        </div>
+
+        <div class="project">
+            <h3>3. Flutter Web Todo App</h3>
+            <p>A cross-platform web app built with Flutter Web for managing tasks online.</p>
+
+            <!-- Screenshot Gallery with View Buttons -->
+            <div class="screenshots">
+                <div class="screenshot">
+                    <!-- <img src="images/flutter_screenshot1.png" alt="Flutter Web Todo Screenshot 1" width="200"> -->
+                    <a class="view-btn" href="images/flutter_screenshot1.png" target="_blank">View photos</a>
+                </div>
+            </div>
+
+            <a href="https://github.com/balajiinfo8/flutter.git" target="_blank">Source Code</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <p>Let's build something cool. Reach out via email!</p>
+        <p><a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Balaji V. All Rights Reserved.</p>
+        <p>
+            <a href="https://github.com/balajiinfo8" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/vjbalaji-00283a18a/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+
+</html>
