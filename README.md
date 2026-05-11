@@ -1,66 +1,77 @@
-# 📂 Portfolio
+# Balaji Vinothkumar Portfolio
 
-## 📝 Task Manager (HTML, CSS, JavaScript)
-A lightweight and responsive **to‑do list web app** built with vanilla **HTML, CSS, and JavaScript**.  
-It allows users to add, edit, mark complete, and delete tasks with data stored in **LocalStorage** for persistence.  
-Designed with a **mobile‑first approach** to ensure usability across devices.
+A personal portfolio website for showcasing backend development experience, technical skills, project work, resume links, and contact details.
 
-**Highlights:**
-- CRUD functionality for tasks
-- LocalStorage persistence
-- Clean and responsive UI
-- Built without frameworks for clarity and simplicity
+## Overview
 
----
+This portfolio highlights work as a Backend Developer with a focus on Python, Django, FastAPI, REST APIs, WebSockets, asynchronous programming, database optimization, and real-time backend systems. The project also includes direct links to view and download the latest resume.
 
-## ✅ Django Task Manager with JWT Authentication
-A secure and scalable **task reminder web app** built using **Django REST Framework** and **Bootstrap 5**.  
-It provides **JWT authentication** for user login and registration, and a RESTful API for managing tasks.  
-The interface is responsive and database‑driven, making it suitable for real‑world use cases.
+## Features
 
-**Highlights:**
-- JWT authentication (login, register, refresh tokens)
-- RESTful API endpoints for tasks
-- Bootstrap 5 responsive frontend
-- Database‑backed task storage (SQLite/PostgreSQL/MySQL)
-- Extensible for reminders, notifications, and dashboards
+- Clean single-page portfolio layout
+- Hero section with professional summary
+- Resume view and download buttons
+- Key highlights with measurable impact
+- Technical skills section
+- Project showcase with live and GitHub links
+- Experience, education, and certifications sections
+- Contact section with email, GitHub, LinkedIn, and resume link
+- Responsive design for desktop and mobile screens
 
----
+## Tech Stack
 
-## 🛒 E‑Commerce UI (HTML, CSS, Bootstrap)
-A **frontend prototype** of an e‑commerce store built with **HTML, CSS, and Bootstrap**.  
-It showcases product listings, shopping cart UI, and responsive design principles.  
-Focused on **professional presentation** and recruiter‑friendly clarity.
+- HTML5
+- CSS3
+- Responsive Web Design
 
-**Highlights:**
-- Product grid layout with Bootstrap
-- Responsive design for mobile and desktop
-- Clean, professional UI suitable for portfolio demos
+## Projects Included
 
----
+### 1. Real-Time Voice Translation System
+- FastAPI backend for real-time audio streaming
+- WebSockets and AsyncIO for concurrent communication
+- Low-latency speech processing pipeline
+- GitHub: [FastAPI-Live-Translator](https://github.com/balajiinfo8/FastAPI-Live-Translator)
 
-## 📋 To‑Do App (Django + React)
-A **full‑stack CRUD application** built with **Django (backend)** and **React (frontend)**.  
-It demonstrates integration of REST APIs with a modern frontend framework.  
-Users can add, edit, delete, and mark tasks complete with real‑time updates.
+### 2. AskMe AI Assistant API
+- Django REST Framework based AI assistant backend
+- Structured API endpoints for AI-powered query handling
+- Live Demo: [AskAI Django Assistant](https://askai-django-assistant.onrender.com/)
+- GitHub: [AskAI-Django-Assistant](https://github.com/balajiinfo8/AskAI-Django-Assistant)
 
-**Highlights:**
-- Django REST API backend
-- React frontend with state management
-- CRUD functionality with live updates
-- Mobile‑responsive design
+### 3. Task Management API
+- Django-based task management backend
+- JWT authentication and CRUD operations
+- Live Demo: [Task Manager Django](https://task-manager-django-iqs0.onrender.com)
+- GitHub: [task_manager_django](https://github.com/balajiinfo8/task_manager_django)
 
----
+## Resume Links
 
-## 🤖 NLP‑Based AI Project (Python)
-An **AI project** built with Python that applies **Natural Language Processing (NLP)** techniques.  
-It showcases your ability to integrate machine learning concepts into practical applications.  
-Designed to demonstrate backend logic, clean code, and recruiter‑friendly documentation.
+- View Resume: [Google Drive View Link](https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing)
+- Download Resume: [Google Drive Download Link](https://drive.google.com/uc?export=download&id=1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz)
 
-**Highlights:**
-- Python implementation of NLP algorithms
-- Text preprocessing and analysis
-- Modular, well‑documented code
-- Recruiter‑friendly presentation in portfolio
+## Folder Structure
 
----
+```bash
+portfolio/
+│── portfolio.html
+│── README.md
+```
+
+## How to Use
+
+1. Download or clone the repository.
+2. Save the portfolio code as an `.html` file.
+3. Open the HTML file in a browser to preview it locally.
+4. Deploy it using GitHub Pages, Netlify, Vercel, or any static hosting service.
+
+## Contact
+
+- **Name:** Balaji Vinothkumar
+- **Email:** [balajivinothkumar.dev@gmail.com](mailto:balajivinothkumar.dev@gmail.com)
+- **GitHub:** [github.com/balajiinfo8](https://github.com/balajiinfo8)
+- **LinkedIn:** [linkedin.com/in/balaji-vinothkumar](https://linkedin.com/in/balaji-vinothkumar)
+- **Location:** Bangalore, India
+
+## License
+
+This project is open for personal use and portfolio showcasing.
