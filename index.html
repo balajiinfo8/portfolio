@@ -1,205 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Balaji V | Backend Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji Vinothkumar | Backend Developer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #020617;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-dark: #0ea5e9;
+      --success: #22c55e;
+      --max-width: 1100px;
+    }
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-section {
-    padding: 70px 20px;
-    text-align: center;
-    border-bottom: 1px solid #1e293b;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-.hero {
-    padding: 120px 20px;
-    background: linear-gradient(135deg, #020617, #1e293b);
-}
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-.hero h1 { 
-    font-size: 3rem; 
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.hero h2 { 
-    color: #94a3b8; 
-}
+    section {
+      padding: 72px 20px;
+      border-bottom: 1px solid var(--border);
+    }
 
-.hero p {
-    color: #cbd5f5;
-    max-width: 650px;
-    margin: auto;
-}
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
 
-/* BUTTONS */
-.btn-group {
-    margin-top: 25px;
-}
+    .hero {
+      padding: 110px 20px 90px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--bg-alt), #1e293b);
+    }
 
-.btn {
-    display: inline-block;
-    margin: 8px;
-    padding: 12px 22px;
-    background: #38bdf8;
-    color: #000;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
+    .hero h1 {
+      margin: 0;
+      font-size: 3rem;
+      line-height: 1.15;
+    }
 
-.btn:hover {
-    background: #0ea5e9;
-}
+    .hero h2 {
+      margin-top: 14px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
 
-.btn-secondary {
-    background: transparent;
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
-}
+    .hero p {
+      max-width: 760px;
+      margin: 22px auto 0;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+    }
 
-.btn-secondary:hover {
-    background: #38bdf8;
-    color: #000;
-}
+    .btn-group {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
 
-/* General link styling for sections and footer */
-section a,
-footer a {
-    color: #38bdf8;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
 
-section a:hover,
-footer a:hover {
-    text-decoration: underline;
-}
+    .btn-primary {
+      background: var(--accent);
+      color: #001018;
+    }
 
-/* SKILLS */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      text-decoration: none;
+    }
 
-.skill-card, .project-card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
+    .btn-secondary {
+      background: transparent;
+      color: var(--accent);
+      border-color: var(--accent);
+    }
 
-.skill-card:hover, .project-card:hover {
-    transform: translateY(-5px);
-}
+    .btn-secondary:hover {
+      background: var(--accent);
+      color: #001018;
+      text-decoration: none;
+    }
 
-.project-card {
-    margin: 20px auto;
-    max-width: 750px;
-    text-align: left;
-}
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
 
-.links a {
-    color: #38bdf8;
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto 36px;
+    }
 
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #020617;
-}
-</style>
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .highlight-card,
+    .skill-card,
+    .project-card,
+    .experience-card,
+    .edu-card,
+    .cert-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .highlight-card:hover,
+    .skill-card:hover,
+    .project-card:hover,
+    .experience-card:hover,
+    .edu-card:hover,
+    .cert-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .highlight-card h3,
+    .skill-card h3,
+    .project-card h3,
+    .experience-card h3,
+    .edu-card h3,
+    .cert-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .highlight-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .skills-grid,
+    .edu-grid,
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .project-list,
+    .experience-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .project-card ul,
+    .experience-card ul,
+    .cert-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .project-card li,
+    .experience-card li,
+    .cert-card li {
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .links {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .summary-box {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      color: #cbd5e1;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: var(--bg-alt);
+      text-align: center;
+      padding: 24px 20px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .highlights,
+      .skills-grid,
+      .edu-grid,
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2.35rem;
+      }
+
+      .hero h2 {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-<h1>Balaji V</h1>
-<h2>Backend Engineer (Python) | FastAPI, Django | Real-Time Systems</h2>
+  <section class="hero">
+    <div class="container">
+      <h1>Balaji Vinothkumar</h1>
+      <h2>Backend Developer | Python, Django, FastAPI | Real-Time Systems</h2>
+      <p>
+        Backend Developer with hands-on experience building scalable REST APIs and real-time systems using Python, Django, and FastAPI.
+        Skilled in asynchronous programming, WebSockets, JWT authentication, query optimization, and API integration, with experience delivering low-latency backend services and performance improvements.
+      </p>
 
-<p>
-Building low-latency backend systems and real-time AI pipelines using FastAPI, WebSockets, and async processing.<br><br>
-Designed systems handling concurrent workloads with optimized performance.<br><br>
-<strong>Open to Backend Engineer roles 🚀</strong>
-</p>
+      <div class="btn-group">
+        <a href="https://drive.google.com/uc?export=download&id=1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz" class="btn btn-primary">
+          Download Resume
+        </a>
 
-<div class="btn-group">
+        <a href="https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          View Resume
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Download Resume -->
-    <a href="https://drive.google.com/uc?export=download&id=1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz" 
-       class="btn">
-       Download Resume (PDF)
-    </a>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Profile</h2>
+      <p class="section-subtitle">
+        I build backend systems focused on API performance, real-time communication, and maintainable application architecture.
+      </p>
 
-    <!-- View Resume -->
-    <a href="https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="btn btn-secondary">
-       View Resume
-    </a>
+      <div class="summary-box">
+        I have worked on backend development using Django REST Framework and FastAPI, including WebSocket pipelines, asynchronous processing, JWT authentication, RBAC, MySQL optimization, and integrations with services such as Whisper and Azure Speech. I also have a solid foundation in data structures and algorithms including arrays, strings, sorting, searching, recursion, linked lists, stacks, and queues.
+      </div>
+    </div>
+  </section>
 
-</div>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Key Highlights</h2>
+      <p class="section-subtitle">A few measurable results from your backend and real-time system work.</p>
 
-</div>
-</section>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="highlight-number">1–2s</div>
+          <h3>Low Latency</h3>
+          <p>Delivered backend response times of about 1–2 seconds in real-time audio processing workflows.</p>
+        </div>
 
-<!-- HIGHLIGHTS -->
-<section>
-<div class="container">
-<h2>Key Highlights</h2>
-<p>
-• Built real-time system handling 50+ concurrent streams<br>
-• Achieved ~1–2s latency in speech processing<br>
-• Improved API performance by 30% using query optimization
-</p>
-</div>
-</section>
+        <div class="highlight-card">
+          <div class="highlight-number">30%</div>
+          <h3>API Improvement</h3>
+          <p>Improved API performance through query optimization on production-style database workloads.</p>
+        </div>
 
-<!-- SKILLS -->
-<section>
-<div class="container">
-<h2>Technical Skills</h2>
+        <div class="highlight-card">
+          <div class="highlight-number">Real-Time</div>
+          <h3>Concurrent Systems</h3>
+          <p>Built WebSocket and AsyncIO based services for streaming communication and concurrent backend processing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="skills-grid">
-<div class="skill-card">
-<h3>Backend</h3>
-<p>FastAPI, Django, REST APIs, WebSockets, AsyncIO</p>
-</div>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Core technologies and concepts used in your projects and experience.</p>
 
-<div class="skill-card">
-<h3>Databases</h3>
-<p>MySQL, SQLite, ORM Optimization</p>
-</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>Python, Java</p>
+        </div>
 
-<div class="skill-card">
-<h3>AI Integration</h3>
-<p>Whisper, IndicTrans2, Azure Speech APIs</p>
-</div>
-</div>
+        <div class="skill-card">
+          <h3>Frameworks</h3>
+          <p>Django, Django REST Framework, FastAPI</p>
+        </div>
 
-</div>
-</section>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>REST APIs, WebSockets, AsyncIO, API Integration, Asynchronous Programming</p>
+        </div>
 
-<!-- PROJECTS -->
-<section>
-<div 
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <p>MySQL, PostgreSQL</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Security & Concepts</h3>
+          <p>JWT Authentication, RBAC, Concurrency, Query Optimization, OOP</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, Linux, Postman, Uvicorn, Jira</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Selected backend and API projects with live or repository links.</p>
+
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Real-Time Voice Translation System</h3>
+          <p class="meta">FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech</p>
+          <ul>
+            <li>Built a FastAPI backend for real-time audio streaming using WebSockets and AsyncIO.</li>
+            <li>Handled multiple concurrent audio streams using asynchronous backend processing.</li>
+            <li>Achieved low-latency communication of around 1–2 seconds through optimized non-blocking design.</li>
+            <li>Integrated speech and translation services into a real-time processing workflow.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">FastAPI</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">AsyncIO</span>
+            <span class="tag">Speech Pipeline</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>AskMe AI Assistant API</h3>
+          <p class="meta">Django | Django REST Framework | AI Integration</p>
+          <ul>
+            <li>Developed scalable REST APIs using Django REST Framework for AI-powered query handling.</li>
+            <li>Designed modular backend endpoints with secure API architecture and structured response workflows.</li>
+            <li>Integrated AI-powered response generation with a maintainable backend design.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span>
+            <span class="tag">DRF</span>
+            <span class="tag">REST API</span>
+            <span class="tag">AI Backend</span>
+          </div>
+          <div class="links">
+            <a href="https://askai-django-assistant.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/balajiinfo8/AskAI-Django-Assistant" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Task Management API</h3>
+          <p class="meta">Django | DRF | JWT | MySQL</p>
+          <ul>
+            <li>Built secure REST APIs with JWT authentication, filtering, and full CRUD operations.</li>
+            <li>Improved performance through database query optimization and indexing.</li>
+            <li>Designed backend endpoints suitable for scalable task management workflows.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span>
+            <span class="tag">JWT</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <div class="links">
+            <a href="https://task-manager-django-iqs0.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/balajiinfo8/task_manager_django" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Hands-on backend development experience across internships and junior engineering roles.</p>
+
+      <div class="experience-list">
+        <div class="experience-card">
+          <h3>Sumeru Digital Solutions — Jr. Software Developer</h3>
+          <p class="meta">Bangalore, India | Dec 2025 – Mar 2026</p>
+          <ul>
+            <li>Engineered asynchronous FastAPI services for real-time audio processing systems using Python and AsyncIO.</li>
+            <li>Designed WebSocket-based pipelines for streaming communication and concurrent data handling.</li>
+            <li>Integrated external APIs including Whisper and Azure Speech Services into backend workflows.</li>
+            <li>Reduced backend latency to around 1–2 seconds through non-blocking architecture.</li>
+            <li>Tracked feature development and bug fixes using Jira.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Aparajitha Corporate Services Pvt Ltd — Associate Engineer</h3>
+          <p class="meta">Madurai, India | Sep 2024 – May 2025</p>
+          <ul>
+            <li>Developed and maintained production-grade REST APIs using Django REST Framework.</li>
+            <li>Implemented JWT authentication and role-based access control for secure user management.</li>
+            <li>Optimized MySQL queries on databases with 10,000+ records, improving API performance by 30%.</li>
+            <li>Automated backend workflows using Python scripts and tracked delivery through Jira.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Aparajitha Corporate Services Pvt Ltd — Django Backend Intern</h3>
+          <p class="meta">Madurai, India | Jun 2024 – Aug 2024</p>
+          <ul>
+            <li>Built CRUD APIs using Django and Django REST Framework with proper data modeling.</li>
+            <li>Tested and validated API endpoints to ensure backend reliability and functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">Academic background supporting backend development and software engineering work.</p>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h3>Master of Computer Applications</h3>
+          <p class="meta">P.S.N.A College of Engineering | 2022 – 2024</p>
+          <p>73.1%</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Bachelor of Computer Applications</h3>
+          <p class="meta">Dr. N.G.P Arts and Science College | 2019 – 2022</p>
+          <p>72.81%</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Problem Solving</h3>
+          <p class="meta">DSA Practice</p>
+          <p>Worked on arrays, strings, sorting, searching, recursion, linked lists, stacks, queues, two pointers, and hash tables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Courses and continuous learning that support your backend and software engineering path.</p>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Professional Learning</h3>
+          <ul>
+            <li>Django Essential Training — LinkedIn Learning</li>
+            <li>Python OOP — LinkedIn Learning</li>
+            <li>Google Python Automation — Coursera</li>
+          </ul>
+        </div>
+
+        <div class="cert-card">
+          <h3>DSA Profiles</h3>
+          <ul>
+            <li>GeeksForGeeks — Solved problems in arrays, strings, sorting, searching, and recursion.</li>
+            <li>LeetCode — Solved problems in arrays, strings, two pointers, and hash tables.</li>
+          </ul>
+        </div>
+
+        <div class="cert-card">
+          <h3>Focus Areas</h3>
+          <ul>
+            <li>Backend engineering</li>
+            <li>API design and optimization</li>
+            <li>Real-time communication systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Available for backend developer and Python-focused software roles.</p>
+
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91-9500547928</p>
+        <p><strong>Location:</strong> Bangalore, India</p>
+
+        <div class="contact-links">
+          <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/balaji-vinothkumar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Balaji Vinothkumar | Backend Developer Portfolio</p>
+  </footer>
+
+</body>
+</html>
