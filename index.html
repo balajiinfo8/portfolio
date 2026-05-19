@@ -54,16 +54,8 @@
       background: linear-gradient(135deg, var(--bg-alt), #1e293b);
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    .hero h2 {
-      color: var(--muted);
-      font-weight: 500;
-      margin-top: 10px;
-    }
+    .hero h1 { font-size: 3rem; margin: 0; }
+    .hero h2 { color: var(--muted); font-weight: 500; margin-top: 10px; }
 
     .hero p {
       max-width: 750px;
@@ -93,9 +85,7 @@
       color: #001018;
     }
 
-    .btn-primary:hover {
-      background: var(--accent-dark);
-    }
+    .btn-primary:hover { background: var(--accent-dark); }
 
     .btn-secondary {
       border: 1px solid var(--accent);
@@ -123,10 +113,6 @@
 
     .summary-box,
     .project-card,
-    .skill-card,
-    .experience-card,
-    .edu-card,
-    .cert-card,
     .contact-box {
       background: var(--card);
       border: 1px solid var(--border);
@@ -136,19 +122,9 @@
     }
 
     .project-card:hover,
-    .skill-card:hover,
-    .experience-card:hover,
-    .edu-card:hover,
-    .cert-card:hover,
     .summary-box:hover {
       transform: translateY(-4px);
       border-color: var(--accent);
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
     }
 
     .project-list { display: grid; gap: 20px; }
@@ -176,7 +152,6 @@
     }
 
     ul { padding-left: 18px; }
-
     li { margin-bottom: 6px; }
 
     .links {
@@ -194,7 +169,6 @@
     }
 
     @media (max-width: 900px) {
-      .grid-3 { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.2rem; }
     }
   </style>
@@ -207,13 +181,23 @@
   <div class="container">
     <h1>Balaji Vinothkumar</h1>
     <h2>Backend Developer | Python | Django | FastAPI</h2>
+
     <p>
       Backend developer focused on scalable APIs, real-time systems, and production-grade backend architecture using Python ecosystem.
     </p>
 
     <div class="btn-group">
-      <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1apgon7dPzIkBzhyzizkP1-Wvo_iowQVD">Download Resume</a>
-      <a class="btn btn-secondary" href="https://drive.google.com/file/d/1apgon7dPzIkBzhyzizkP1-Wvo_iowQVD/view" target="_blank">View Resume</a>
+      <a class="btn btn-primary"
+         href="https://drive.google.com/uc?export=download&id=1CH-ErdFnVEIrmEXh_g95pjbelsu076x9"
+         target="_blank">
+        Download Resume
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://drive.google.com/file/d/1CH-ErdFnVEIrmEXh_g95pjbelsu076x9/view?usp=sharing"
+         target="_blank">
+        View Resume
+      </a>
     </div>
   </div>
 </section>
@@ -225,7 +209,7 @@
     <p class="section-subtitle">Backend engineering, API systems, and scalable backend design.</p>
 
     <div class="summary-box">
-      Built backend systems using Django REST Framework and FastAPI with JWT authentication, WebSockets, AsyncIO, and MySQL optimization. Also actively practicing DSA for interview preparation.
+      Built backend systems using Django REST Framework and FastAPI with JWT authentication, WebSockets, AsyncIO, and MySQL optimization. Actively solving DSA problems for interview preparation and system design readiness.
     </div>
   </div>
 </section>
@@ -241,19 +225,16 @@
       <div class="project-card">
         <h3>Real-Time Voice Translation System</h3>
         <p class="meta">FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech</p>
-
         <ul>
-          <li>Real-time streaming backend with WebSockets</li>
-          <li>AsyncIO-based concurrent audio processing</li>
-          <li>Speech-to-text + translation pipeline integration</li>
+          <li>Real-time streaming backend using WebSockets</li>
+          <li>AsyncIO-based concurrent processing</li>
+          <li>Speech-to-text pipeline integration</li>
         </ul>
-
         <div class="tag-row">
           <span class="tag">FastAPI</span>
           <span class="tag">WebSockets</span>
           <span class="tag">AsyncIO</span>
         </div>
-
         <div class="links">
           <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank">GitHub</a>
         </div>
@@ -262,18 +243,15 @@
       <div class="project-card">
         <h3>AskAI Assistant Backend</h3>
         <p class="meta">Django | DRF | AI Integration</p>
-
         <ul>
-          <li>REST API backend for AI query handling</li>
-          <li>Modular API architecture with Django REST Framework</li>
+          <li>REST API backend for AI-based query handling</li>
+          <li>Modular Django REST architecture</li>
         </ul>
-
         <div class="tag-row">
           <span class="tag">Django</span>
           <span class="tag">DRF</span>
           <span class="tag">AI</span>
         </div>
-
         <div class="links">
           <a href="https://askai-django-assistant.onrender.com/" target="_blank">Live</a>
           <a href="https://github.com/balajiinfo8/AskAI-Django-Assistant" target="_blank">GitHub</a>
@@ -283,19 +261,15 @@
       <div class="project-card">
         <h3>Task Management API</h3>
         <p class="meta">Django | JWT | MySQL</p>
-
         <ul>
-          <li>Secure CRUD API with JWT authentication</li>
+          <li>Secure CRUD API with authentication</li>
           <li>Role-based access control system</li>
-          <li>Optimized MySQL queries</li>
         </ul>
-
         <div class="tag-row">
           <span class="tag">Django</span>
           <span class="tag">JWT</span>
           <span class="tag">MySQL</span>
         </div>
-
         <div class="links">
           <a href="https://task-manager-django-iqs0.onrender.com" target="_blank">Live</a>
           <a href="https://github.com/balajiinfo8/task_manager_django" target="_blank">GitHub</a>
@@ -306,19 +280,20 @@
   </div>
 </section>
 
-<!-- DSA -->
+<!-- DSA (IMPORTANT IMPROVEMENT) -->
 <section>
   <div class="container">
     <h2 class="section-title">DSA Practice</h2>
-    <p class="section-subtitle">Interview preparation and problem-solving</p>
+    <p class="section-subtitle">Interview-focused problem solving</p>
 
     <div class="summary-box">
       <h3>Core Topics</h3>
       <ul>
-        <li>Arrays, Strings, Hashing</li>
-        <li>Linked List, Stack, Queue</li>
+        <li>Arrays, Strings, Hash Maps</li>
+        <li>Linked Lists, Stack, Queue</li>
         <li>Recursion, Sorting, Searching</li>
         <li>Time & Space Complexity Analysis</li>
+        <li>Problem-solving patterns (sliding window, two pointers)</li>
       </ul>
 
       <div class="tag-row">
@@ -328,8 +303,8 @@
       </div>
 
       <div class="links">
-        <a href="https://leetcode.com/u/BalajiCode08/" target="_blank">LeetCode</a>
-        <a href="https://www.geeksforgeeks.org/profile/balaji_v08" target="_blank">GeeksForGeeks</a>
+        <a href="https://leetcode.com/" target="_blank">LeetCode</a>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks</a>
       </div>
     </div>
   </div>
