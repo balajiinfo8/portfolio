@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Balaji Vinothkumar | Backend Developer</title>
+
   <style>
     :root {
       --bg: #0f172a;
@@ -14,7 +15,6 @@
       --muted: #94a3b8;
       --accent: #38bdf8;
       --accent-dark: #0ea5e9;
-      --success: #22c55e;
       --max-width: 1100px;
     }
 
@@ -131,18 +131,14 @@
       margin: 0 auto 36px;
     }
 
-    .highlights {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .highlight-card,
-    .skill-card,
+    .summary-box,
     .project-card,
+    .skill-card,
     .experience-card,
     .edu-card,
-    .cert-card {
+    .cert-card,
+    .contact-box,
+    .highlight-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
@@ -150,33 +146,19 @@
       transition: transform 0.25s ease, border-color 0.25s ease;
     }
 
-    .highlight-card:hover,
-    .skill-card:hover,
+    .summary-box:hover,
     .project-card:hover,
+    .skill-card:hover,
     .experience-card:hover,
     .edu-card:hover,
-    .cert-card:hover {
+    .cert-card:hover,
+    .contact-box:hover,
+    .highlight-card:hover {
       transform: translateY(-4px);
       border-color: var(--accent);
     }
 
-    .highlight-card h3,
-    .skill-card h3,
-    .project-card h3,
-    .experience-card h3,
-    .edu-card h3,
-    .cert-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .highlight-number {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
+    .highlights,
     .skills-grid,
     .edu-grid,
     .cert-grid {
@@ -191,23 +173,17 @@
       gap: 22px;
     }
 
-    .project-card ul,
-    .experience-card ul,
-    .cert-card ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .project-card li,
-    .experience-card li,
-    .cert-card li {
-      margin-bottom: 8px;
-    }
-
     .meta {
       color: var(--muted);
       font-size: 0.95rem;
       margin-bottom: 12px;
+    }
+
+    .highlight-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
     }
 
     .tag-row {
@@ -228,6 +204,14 @@
       font-weight: 600;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
     .links {
       margin-top: 16px;
       display: flex;
@@ -235,22 +219,8 @@
       gap: 16px;
     }
 
-    .summary-box {
-      max-width: 900px;
-      margin: 0 auto;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      color: #cbd5e1;
-    }
-
     .contact-box {
       text-align: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px 20px;
       max-width: 760px;
       margin: 0 auto;
     }
@@ -279,7 +249,7 @@
       }
 
       .hero h1 {
-        font-size: 2.35rem;
+        font-size: 2.3rem;
       }
 
       .hero h2 {
@@ -288,75 +258,134 @@
     }
   </style>
 </head>
+
 <body>
+
+  <!-- HERO -->
 
   <section class="hero">
     <div class="container">
+
       <h1>Balaji Vinothkumar</h1>
-      <h2>Backend Developer | Python, Django, FastAPI | Real-Time Systems</h2>
+
+      <h2>
+        Backend Developer | Python, Django, FastAPI
+      </h2>
+
       <p>
-        Backend Developer with hands-on experience building scalable REST APIs and real-time systems using Python, Django, and FastAPI.
-        Skilled in asynchronous programming, WebSockets, JWT authentication, query optimization, and API integration, with experience delivering low-latency backend services and performance improvements.
+        Backend Developer focused on building REST APIs, real-time communication systems,
+        and scalable backend applications using Python, Django, Django REST Framework,
+        and FastAPI.
       </p>
 
       <div class="btn-group">
-        <a href="https://drive.google.com/uc?export=download&id=1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz" class="btn btn-primary">
+
+        <a
+          href="https://drive.google.com/uc?export=download&id=1apgon7dPzIkBzhyzizkP1-Wvo_iowQVD"
+          class="btn btn-primary"
+        >
           Download Resume
         </a>
 
-        <a href="https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <a
+          href="https://drive.google.com/file/d/1apgon7dPzIkBzhyzizkP1-Wvo_iowQVD/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
           View Resume
         </a>
+
       </div>
     </div>
   </section>
 
+  <!-- PROFILE -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Profile</h2>
+
       <p class="section-subtitle">
-        I build backend systems focused on API performance, real-time communication, and maintainable application architecture.
+        Backend engineering focused on APIs, authentication systems,
+        database optimization, and real-time backend workflows.
       </p>
 
       <div class="summary-box">
-        I have worked on backend development using Django REST Framework and FastAPI, including WebSocket pipelines, asynchronous processing, JWT authentication, RBAC, MySQL optimization, and integrations with services such as Whisper and Azure Speech. I also have a solid foundation in data structures and algorithms including arrays, strings, sorting, searching, recursion, linked lists, stacks, and queues.
+        I have experience building backend applications using Django REST Framework
+        and FastAPI. My work includes JWT authentication, RBAC, WebSockets,
+        asynchronous programming, MySQL query optimization, and external API integrations.
+        I also practice data structures and algorithms regularly using platforms such as
+        LeetCode and GeeksForGeeks.
       </div>
+
     </div>
   </section>
 
+  <!-- HIGHLIGHTS -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Key Highlights</h2>
-      <p class="section-subtitle">A few measurable results from your backend and real-time system work.</p>
+
+      <p class="section-subtitle">
+        Core backend development work and engineering focus areas.
+      </p>
 
       <div class="highlights">
+
         <div class="highlight-card">
-          <div class="highlight-number">1–2s</div>
-          <h3>Low Latency</h3>
-          <p>Delivered backend response times of about 1–2 seconds in real-time audio processing workflows.</p>
+          <div class="highlight-number">REST APIs</div>
+
+          <h3>Backend Development</h3>
+
+          <p>
+            Built backend APIs using Django REST Framework and FastAPI
+            with authentication, CRUD operations, filtering, and modular architecture.
+          </p>
         </div>
 
         <div class="highlight-card">
-          <div class="highlight-number">30%</div>
-          <h3>API Improvement</h3>
-          <p>Improved API performance through query optimization on production-style database workloads.</p>
+          <div class="highlight-number">AsyncIO</div>
+
+          <h3>Real-Time Systems</h3>
+
+          <p>
+            Worked with WebSockets and asynchronous backend processing
+            for real-time audio and streaming workflows.
+          </p>
         </div>
 
         <div class="highlight-card">
-          <div class="highlight-number">Real-Time</div>
-          <h3>Concurrent Systems</h3>
-          <p>Built WebSocket and AsyncIO based services for streaming communication and concurrent backend processing.</p>
+          <div class="highlight-number">SQL</div>
+
+          <h3>Database Optimization</h3>
+
+          <p>
+            Improved API performance using query optimization,
+            indexing, and structured backend design.
+          </p>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Technical Skills</h2>
-      <p class="section-subtitle">Core technologies and concepts used in your projects and experience.</p>
+
+      <p class="section-subtitle">
+        Technologies and concepts used in backend development projects.
+      </p>
 
       <div class="skills-grid">
+
         <div class="skill-card">
           <h3>Languages</h3>
           <p>Python, Java</p>
@@ -369,7 +398,7 @@
 
         <div class="skill-card">
           <h3>Backend</h3>
-          <p>REST APIs, WebSockets, AsyncIO, API Integration, Asynchronous Programming</p>
+          <p>REST APIs, WebSockets, AsyncIO, API Integration</p>
         </div>
 
         <div class="skill-card">
@@ -378,211 +407,462 @@
         </div>
 
         <div class="skill-card">
-          <h3>Security & Concepts</h3>
-          <p>JWT Authentication, RBAC, Concurrency, Query Optimization, OOP</p>
+          <h3>Authentication</h3>
+          <p>JWT Authentication, RBAC</p>
         </div>
 
         <div class="skill-card">
           <h3>Tools</h3>
-          <p>Git, Linux, Postman, Uvicorn, Jira</p>
+          <p>Git, Linux, Postman, Jira, Uvicorn</p>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Selected backend and API projects with live or repository links.</p>
+
+      <p class="section-subtitle">
+        Backend projects focused on APIs, real-time systems, and backend architecture.
+      </p>
 
       <div class="project-list">
+
+        <!-- PROJECT 1 -->
+
         <div class="project-card">
+
           <h3>Real-Time Voice Translation System</h3>
-          <p class="meta">FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech</p>
+
+          <p class="meta">
+            FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech
+          </p>
+
           <ul>
-            <li>Built a FastAPI backend for real-time audio streaming using WebSockets and AsyncIO.</li>
-            <li>Handled multiple concurrent audio streams using asynchronous backend processing.</li>
-            <li>Achieved low-latency communication of around 1–2 seconds through optimized non-blocking design.</li>
-            <li>Integrated speech and translation services into a real-time processing workflow.</li>
+            <li>
+              Built a FastAPI backend for real-time audio streaming using WebSockets.
+            </li>
+
+            <li>
+              Used AsyncIO for handling concurrent backend communication workflows.
+            </li>
+
+            <li>
+              Integrated Whisper and Azure Speech APIs into the backend pipeline.
+            </li>
+
+            <li>
+              Implemented asynchronous processing for streaming audio workflows.
+            </li>
           </ul>
+
           <div class="tag-row">
             <span class="tag">FastAPI</span>
             <span class="tag">WebSockets</span>
             <span class="tag">AsyncIO</span>
-            <span class="tag">Speech Pipeline</span>
+            <span class="tag">Speech API</span>
           </div>
+
           <div class="links">
-            <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a
+              href="https://github.com/balajiinfo8/FastAPI-Live-Translator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </div>
+
         </div>
 
+        <!-- PROJECT 2 -->
+
         <div class="project-card">
+
           <h3>AskMe AI Assistant API</h3>
-          <p class="meta">Django | Django REST Framework | AI Integration</p>
+
+          <p class="meta">
+            Django | Django REST Framework | AI Integration
+          </p>
+
           <ul>
-            <li>Developed scalable REST APIs using Django REST Framework for AI-powered query handling.</li>
-            <li>Designed modular backend endpoints with secure API architecture and structured response workflows.</li>
-            <li>Integrated AI-powered response generation with a maintainable backend design.</li>
+            <li>
+              Developed REST APIs using Django REST Framework
+              for AI-powered query handling.
+            </li>
+
+            <li>
+              Designed modular backend endpoints and structured API responses.
+            </li>
+
+            <li>
+              Integrated AI-powered backend workflows into the application.
+            </li>
           </ul>
+
           <div class="tag-row">
             <span class="tag">Django</span>
             <span class="tag">DRF</span>
             <span class="tag">REST API</span>
             <span class="tag">AI Backend</span>
           </div>
+
           <div class="links">
-            <a href="https://askai-django-assistant.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href="https://github.com/balajiinfo8/AskAI-Django-Assistant" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+            <a
+              href="https://askai-django-assistant.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/balajiinfo8/AskAI-Django-Assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
           </div>
+
         </div>
 
+        <!-- PROJECT 3 -->
+
         <div class="project-card">
+
           <h3>Task Management API</h3>
-          <p class="meta">Django | DRF | JWT | MySQL</p>
+
+          <p class="meta">
+            Django | DRF | JWT | MySQL
+          </p>
+
           <ul>
-            <li>Built secure REST APIs with JWT authentication, filtering, and full CRUD operations.</li>
-            <li>Improved performance through database query optimization and indexing.</li>
-            <li>Designed backend endpoints suitable for scalable task management workflows.</li>
+            <li>
+              Built secure REST APIs with JWT authentication and CRUD operations.
+            </li>
+
+            <li>
+              Implemented filtering and backend data management workflows.
+            </li>
+
+            <li>
+              Optimized database queries and indexing for better API response handling.
+            </li>
           </ul>
+
           <div class="tag-row">
             <span class="tag">Django</span>
             <span class="tag">JWT</span>
             <span class="tag">CRUD</span>
             <span class="tag">MySQL</span>
           </div>
+
           <div class="links">
-            <a href="https://task-manager-django-iqs0.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href="https://github.com/balajiinfo8/task_manager_django" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+            <a
+              href="https://task-manager-django-iqs0.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/balajiinfo8/task_manager_django"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
           </div>
+
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">Hands-on backend development experience across internships and junior engineering roles.</p>
+
+      <p class="section-subtitle">
+        Internship and backend engineering experience.
+      </p>
 
       <div class="experience-list">
+
         <div class="experience-card">
+
           <h3>Sumeru Digital Solutions — Jr. Software Developer</h3>
-          <p class="meta">Bangalore, India | Dec 2025 – Mar 2026</p>
+
+          <p class="meta">
+            Bangalore, India | Dec 2025 – Mar 2026
+          </p>
+
           <ul>
-            <li>Engineered asynchronous FastAPI services for real-time audio processing systems using Python and AsyncIO.</li>
-            <li>Designed WebSocket-based pipelines for streaming communication and concurrent data handling.</li>
-            <li>Integrated external APIs including Whisper and Azure Speech Services into backend workflows.</li>
-            <li>Reduced backend latency to around 1–2 seconds through non-blocking architecture.</li>
-            <li>Tracked feature development and bug fixes using Jira.</li>
+            <li>
+              Worked on FastAPI backend services for real-time audio workflows.
+            </li>
+
+            <li>
+              Built WebSocket communication pipelines for streaming systems.
+            </li>
+
+            <li>
+              Integrated Whisper and Azure Speech APIs into backend services.
+            </li>
+
+            <li>
+              Used AsyncIO for asynchronous backend processing.
+            </li>
+
+            <li>
+              Managed tasks and issue tracking using Jira.
+            </li>
           </ul>
+
         </div>
 
         <div class="experience-card">
+
           <h3>Aparajitha Corporate Services Pvt Ltd — Associate Engineer</h3>
-          <p class="meta">Madurai, India | Sep 2024 – May 2025</p>
+
+          <p class="meta">
+            Madurai, India | Sep 2024 – May 2025
+          </p>
+
           <ul>
-            <li>Developed and maintained production-grade REST APIs using Django REST Framework.</li>
-            <li>Implemented JWT authentication and role-based access control for secure user management.</li>
-            <li>Optimized MySQL queries on databases with 10,000+ records, improving API performance by 30%.</li>
-            <li>Automated backend workflows using Python scripts and tracked delivery through Jira.</li>
+            <li>
+              Developed REST APIs using Django REST Framework.
+            </li>
+
+            <li>
+              Implemented JWT authentication and role-based access control.
+            </li>
+
+            <li>
+              Worked on MySQL query optimization and backend workflows.
+            </li>
+
+            <li>
+              Automated backend tasks using Python scripts.
+            </li>
           </ul>
+
         </div>
 
         <div class="experience-card">
+
           <h3>Aparajitha Corporate Services Pvt Ltd — Django Backend Intern</h3>
-          <p class="meta">Madurai, India | Jun 2024 – Aug 2024</p>
+
+          <p class="meta">
+            Madurai, India | Jun 2024 – Aug 2024
+          </p>
+
           <ul>
-            <li>Built CRUD APIs using Django and Django REST Framework with proper data modeling.</li>
-            <li>Tested and validated API endpoints to ensure backend reliability and functionality.</li>
+            <li>
+              Built CRUD APIs using Django and Django REST Framework.
+            </li>
+
+            <li>
+              Tested and validated API endpoints for backend reliability.
+            </li>
           </ul>
+
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- EDUCATION -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Education</h2>
-      <p class="section-subtitle">Academic background supporting backend development and software engineering work.</p>
+
+      <p class="section-subtitle">
+        Academic background and problem-solving practice.
+      </p>
 
       <div class="edu-grid">
+
         <div class="edu-card">
+
           <h3>Master of Computer Applications</h3>
-          <p class="meta">P.S.N.A College of Engineering | 2022 – 2024</p>
+
+          <p class="meta">
+            P.S.N.A College of Engineering | 2022 – 2024
+          </p>
+
           <p>73.1%</p>
+
         </div>
 
         <div class="edu-card">
+
           <h3>Bachelor of Computer Applications</h3>
-          <p class="meta">Dr. N.G.P Arts and Science College | 2019 – 2022</p>
+
+          <p class="meta">
+            Dr. N.G.P Arts and Science College | 2019 – 2022
+          </p>
+
           <p>72.81%</p>
+
         </div>
 
         <div class="edu-card">
+
           <h3>Problem Solving</h3>
-          <p class="meta">DSA Practice</p>
-          <p>Worked on arrays, strings, sorting, searching, recursion, linked lists, stacks, queues, two pointers, and hash tables.</p>
+
+          <p class="meta">
+            DSA Practice
+          </p>
+
+          <p>
+            Practiced arrays, strings, sorting, searching, recursion,
+            linked lists, stacks, queues, and hash tables.
+          </p>
+
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- CERTIFICATIONS -->
+
   <section>
     <div class="container">
+
       <h2 class="section-title">Certifications</h2>
-      <p class="section-subtitle">Courses and continuous learning that support your backend and software engineering path.</p>
+
+      <p class="section-subtitle">
+        Continuous learning in backend engineering and software development.
+      </p>
 
       <div class="cert-grid">
+
         <div class="cert-card">
+
           <h3>Professional Learning</h3>
+
           <ul>
             <li>Django Essential Training — LinkedIn Learning</li>
             <li>Python OOP — LinkedIn Learning</li>
             <li>Google Python Automation — Coursera</li>
           </ul>
+
         </div>
 
         <div class="cert-card">
+
           <h3>DSA Profiles</h3>
+
           <ul>
-            <li>GeeksForGeeks — Solved problems in arrays, strings, sorting, searching, and recursion.</li>
-            <li>LeetCode — Solved problems in arrays, strings, two pointers, and hash tables.</li>
+            <li>LeetCode</li>
+            <li>GeeksForGeeks</li>
           </ul>
+
         </div>
 
         <div class="cert-card">
+
           <h3>Focus Areas</h3>
+
           <ul>
-            <li>Backend engineering</li>
-            <li>API design and optimization</li>
-            <li>Real-time communication systems</li>
+            <li>Backend Engineering</li>
+            <li>REST API Development</li>
+            <li>Real-Time Backend Systems</li>
           </ul>
+
         </div>
+
       </div>
     </div>
   </section>
+
+  <!-- CONTACT -->
 
   <section>
     <div class="container">
+
       <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">Available for backend developer and Python-focused software roles.</p>
+
+      <p class="section-subtitle">
+        Open to backend developer and Python developer opportunities.
+      </p>
 
       <div class="contact-box">
-        <p><strong>Email:</strong> <a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
-        <p><strong>Phone:</strong> +91-9500547928</p>
-        <p><strong>Location:</strong> Bangalore, India</p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:balajivinothkumar.dev@gmail.com">
+            balajivinothkumar.dev@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          +91-9500547928
+        </p>
+
+        <p>
+          <strong>Location:</strong>
+          Bangalore, India
+        </p>
 
         <div class="contact-links">
-          <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/balaji-vinothkumar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+
+          <a
+            href="https://github.com/balajiinfo8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com/in/balaji-vinothkumar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1apgon7dPzIkBzhyzizkP1-Wvo_iowQVD/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
-    <p>© 2026 Balaji Vinothkumar | Backend Developer Portfolio</p>
+    <p>
+      © 2026 Balaji Vinothkumar | Backend Developer Portfolio
+    </p>
   </footer>
 
 </body>
