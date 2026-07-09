@@ -1,354 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balaji Vinothkumar | Python Developer</title>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balaji Vinothkumar | Python Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <style>
-    :root {
-      --bg: #0f172a;
-      --bg-alt: #020617;
-      --card: #1e293b;
-      --border: #334155;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-dark: #0ea5e9;
-      --max-width: 1100px;
-    }
+  <body class="dark-theme">
 
-    * { box-sizing: border-box; }
+    <!-- nav for navigational -->
+      <nav class="site-header">
+        <div class="nav-container">
 
-    html { scroll-behavior: smooth; }
+          <a href="#" class="logo">
+              💻 Balaji V
+          </a>
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    section {
-      padding: 70px 20px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-    }
-
-    .hero {
-      padding: 110px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, var(--bg-alt), #1e293b);
-    }
-
-    .hero h1 { font-size: 3rem; margin: 0; }
-    .hero h2 { color: var(--muted); font-weight: 500; margin-top: 10px; }
-
-    .hero p {
-      max-width: 750px;
-      margin: 20px auto;
-      color: #cbd5e1;
-    }
-
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .btn {
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      border: 1px solid transparent;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #001018;
-    }
-
-    .btn-primary:hover { background: var(--accent-dark); }
-
-    .btn-secondary {
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      background: transparent;
-    }
-
-    .btn-secondary:hover {
-      background: var(--accent);
-      color: #001018;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: var(--muted);
-      max-width: 750px;
-      margin: 0 auto 30px;
-    }
-
-    .summary-box,
-    .project-card,
-    .contact-box {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      transition: 0.3s;
-    }
-
-    .project-card:hover,
-    .summary-box:hover {
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-
-    .project-list { display: grid; gap: 20px; }
-
-    .meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .tag {
-      padding: 6px 10px;
-      font-size: 0.85rem;
-      border-radius: 999px;
-      background: rgba(56,189,248,0.12);
-      border: 1px solid rgba(56,189,248,0.25);
-      color: var(--accent);
-    }
-
-    ul { padding-left: 18px; }
-    li { margin-bottom: 6px; }
-
-    .links {
-      margin-top: 14px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      background: var(--bg-alt);
-    }
-
-    @media (max-width: 900px) {
-      .hero h1 { font-size: 2.2rem; }
-    }
-  </style>
-</head>
-
-<body>
-
-<section class="hero">
-  <div class="container">
-    <h1>Balaji Vinothkumar</h1>
-    <h2>Junior Backend Developer | Python | Django | FastAPI</h2>
-
-    <p>
-      Junior Backend Developer focused on scalable APIs, real-time systems, and production-grade backend architecture using Python ecosystem.
-    </p>
-
-    <div class="btn-group">
-     <a class="btn btn-primary"
-       href="https://drive.google.com/uc?export=download&id=1HqjgAeTQvSv_Xl1LFSuptIIkj_f0EUqX"
-       target="_blank"
-       rel="noopener noreferrer">
-       Download Resume
-    </a>
-
-      <a class="btn btn-secondary"
-         href="https://drive.google.com/file/d/1HqjgAeTQvSv_Xl1LFSuptIIkj_f0EUqX/view?usp=sharing"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Resume
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PROFILE -->
-<section>
-  <div class="container">
-    <h2 class="section-title">Profile</h2>
-    <p class="section-subtitle">Junior Backend Developer engineering, API systems, and scalable backend design.</p>
-
-    <div class="summary-box">
-      Built backend systems using Django REST Framework and FastAPI with JWT authentication, WebSockets, AsyncIO, and MySQL optimization. Actively solving DSA problems for interview preparation and system design readiness.
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-  <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <p class="section-subtitle">Production-style backend projects</p>
-
-    <div class="project-list">
-
-      <div class="project-card">
-        <h3>Real-Time Voice Translation System</h3>
-        <p class="meta">FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech</p>
-        <ul>
-          <li>Real-time streaming backend using WebSockets</li>
-          <li>AsyncIO-based concurrent processing</li>
-          <li>Speech-to-text pipeline integration</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tag">FastAPI</span>
-          <span class="tag">WebSockets</span>
-          <span class="tag">AsyncIO</span>
-           <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">Bootstrap</span>
-          <span class="tag">JavaScript</span>
+          <button class="menu-toggle" id="hamburger-button">
+             ☰
+           </button>
+               <ul class="nav-links" id="nav-links">
+          <!-- li was block-level element semantic list elements -->
+            <li><a href="#about">About</a></li>
+            <li class="project-menu">
+              <a href="#">Projects</a>
+              <div class="drop-projects">
+                <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer">📂 GitHub Repository</a>
+              </div>
+            </li>
+            <li class="dsa-menu">
+              <a href="#">Coding Profiles</a>
+              <div class="dropdown-dsa">
+                <a href="https://www.geeksforgeeks.org/profile/balaji_v08"  target="_blank" rel="noopener noreferrer">GeeksForGeeks</a>
+                <a href="https://leetcode.com/u/BalajiCode08/"  target="_blank" rel="noopener noreferrer">LeetCode</a><br/>
+                <a href="https://www.hackerrank.com/profile/vjb08"  target="_blank" rel="noopener noreferrer">HackerRank</a>
+              </div>
+            </li>
+            <li class="resume-menu">
+                <a href="#">📄 Resume</a>
+                <div class="dropdown-resume">
+                  <a href="https://drive.google.com/uc?export=download&id=1HqjgAeTQvSv_Xl1LFSuptIIkj_f0EUqX" target="_blank" rel="noopener noreferrer">⬇️ Download</a>
+                  <a href="https://drive.google.com/file/d/1HqjgAeTQvSv_Xl1LFSuptIIkj_f0EUqX/view?usp=sharing" target="_blank" rel="noopener noreferrer">👁️ View</a>
+                </div>
+            </li>
+            <li class="contact-menu">
+               <a href="#">📬 Contact</a>
+               <div class="dropdown-contact">
+                  <a href="mailto:balajivinothkumar.dev@gmail.com?subject=Job Opportunity">
+                    📧 Email
+                  </a>
+                  <a href="tel:+919500547928">
+                    📱 Call
+                  </a>
+                  <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer">
+                      🐙 GitHub
+                  </a>
+  
+                <a href="https://linkedin.com/in/balaji-vinothkumar" target="_blank" rel="noopener noreferrer">
+                      💼 LinkedIn
+                </a>  
+               </div>
+            </li>
+  
+            <li>
+              <button  id="theme-toggle">
+                🌛
+              </button>
+            </li>
+          </ul>
         </div>
-        <div class="links">
-          <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank">GitHub</a>
-        </div>
-      </div>
 
-      <div class="project-card">
-        <h3>AskAI Assistant</h3>
-        <p class="meta">Django | DRF | AI Integration</p>
-        <ul>
-          <li>REST API backend for AI-based query handling</li>
-          <li>Modular Django REST architecture</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tag">Django</span>
-          <span class="tag">DRF</span>
-          <span class="tag">AI</span>
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">Bootstrap</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Django Template Language (DTL)</span>
-        </div>
-        <div class="links">
-          <a href="https://askai-django-assistant.onrender.com/" target="_blank">Live</a>
-          <a href="https://github.com/balajiinfo8/AskAI-Django-Assistant" target="_blank">GitHub</a>
-        </div>
-      </div>
+      </nav>
 
-      <div class="project-card">
-        <h3>Task Management API</h3>
-        <p class="meta">Django | JWT | MySQL</p>
-        <ul>
-          <li>Secure CRUD API with authentication</li>
-          <li>Role-based access control system</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tag">Django</span>
-          <span class="tag">JWT</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">Bootstrap</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Django Template Language (DTL)</span>
-        </div>
-        <div class="links">
-          <a href="https://task-manager-django-iqs0.onrender.com" target="_blank">Live</a>
-          <a href="https://github.com/balajiinfo8/task_manager_django" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- DSA Practice -->
-<section>
-  <div class="container">
-    <h2 class="section-title">DSA Practice</h2>
-    <p class="section-subtitle">
-      Actively practicing Data Structures and Algorithms to strengthen problem-solving skills and prepare for technical interviews.
-    </p>
-
-    <div class="summary-box">
-      <h3>Coding Profiles</h3>
+  <section class="hero">
+    <div class="container">  
+      <h1>Crafting Scalable Backend Solutions</h1>
+      <h2>Junior Backend Developer | Python | Django | FastAPI</h2>
 
       <p>
-        Solving coding challenges regularly on leading platforms to improve
-        logical thinking, algorithmic problem-solving, and coding proficiency.
+        Junior Backend Developer focused on scalable APIs, real-time systems, and production-grade backend architecture using Python ecosystem.
+      </p>
+    </div>
+  </section>
+  <!-- About Section Starts Here -->
+<section id="about">
+  <div class="container">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="summary-box">
+
+      <h3>Professional Summary</h3>
+
+      <p>
+        I'm Balaji Vinothkumar, a Junior Python Backend Developer with 1+ years
+        of experience building secure, scalable, and maintainable backend
+        applications using Python.
       </p>
 
-      <div class="links">
-        <a href="https://leetcode.com/u/BalajiCode08/" target="_blank">
-          LeetCode Profile
-        </a>
+      <p>
+        My expertise includes Django, Django REST Framework, FastAPI,
+        RESTful APIs, JWT Authentication, WebSockets, AsyncIO,
+        MySQL, PostgreSQL, and API integration.
+      </p>
 
-        <a href="https://www.geeksforgeeks.org/profile/balaji_v08" target="_blank">
-          GeeksForGeeks Profile
-        </a>
+      <p>
+        I enjoy designing clean backend architectures, solving complex
+        programming problems through Data Structures & Algorithms,
+        and continuously improving software engineering best practices.
+      </p>
 
-        <a href="https://www.hackerrank.com/profile/vjb08" target="_blank">
-          HackerRank Profile
-        </a>
-      </div>
+      <p>
+        Currently, I am focused on developing production-ready backend
+        applications while expanding my knowledge in system design,
+        cloud technologies, and scalable distributed systems.
+      </p>
+
     </div>
+
   </div>
 </section>
+<!-- About Section Ends Here -->
 
-<!-- CONTACT -->
-<section>
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
+  <!-- PROFILE -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Technical Summary</h2>
+      <p class="section-subtitle">Junior Backend Developer engineering, API systems, and scalable backend design.</p>
 
-    <div class="contact-box">
-      <p>Email: <a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
-      <p>Phone: +91-9500547928</p>
-      <p>Location: TamilNadu, India</p>
-
-      <div class="links">
-        <a href="https://github.com/balajiinfo8">GitHub</a>
-        <a href="https://linkedin.com/in/balaji-vinothkumar">LinkedIn</a>
+      <div class="summary-box">
+        Built backend systems using Django REST Framework and FastAPI with JWT authentication, WebSockets, AsyncIO, and MySQL optimization. Actively solving DSA problems for interview preparation and system design readiness.
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  © 2026 Balaji Vinothkumar | Junior Backend Developer
-</footer>
+  <!-- PROJECTS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Production-style backend projects</p>
 
-</body>
-</html>
+      <div class="project-list">
+
+        <div class="project-card">
+          <h3>Real-Time Voice Translation System</h3>
+          <p class="meta">FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech</p>
+          <ul>
+            <li>Real-time streaming backend using WebSockets</li>
+            <li>AsyncIO-based concurrent processing</li>
+            <li>Speech-to-text pipeline integration</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">FastAPI</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">AsyncIO</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank" rel="noopener noreferrer">📂 Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>AskAI Assistant</h3>
+          <p class="meta">Django | DRF | AI Integration</p>
+          <ul>
+            <li>REST API backend for AI-based query handling</li>
+            <li>Modular Django REST architecture</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span>
+            <span class="tag">DRF</span>
+            <span class="tag">AI</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Django Template Language (DTL)</span>
+          </div>
+          <div class="links">
+            <a href="https://askai-django-assistant.onrender.com/" target="_blank" rel="noopener noreferrer">🚀 Live Demo</a>
+            <a href="https://github.com/balajiinfo8/AskAI-Django-Assistant" target="_blank" rel="noopener noreferrer">📂 Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Task Management API</h3>
+          <p class="meta">Django | JWT | MySQL</p>
+          <ul>
+            <li>Secure CRUD API with authentication</li>
+            <li>Role-based access control system</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Django</span>
+            <span class="tag">JWT</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Django Template Language (DTL)</span>
+          </div>
+          <div class="links">
+            <a href="https://task-manager-django-iqs0.onrender.com" target="_blank" rel="noopener noreferrer">🚀 Live Demo</a>
+            <a href="https://github.com/balajiinfo8/task_manager_django" target="_blank" rel="noopener noreferrer">📂 Source Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DSA Practice -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">DSA Practice</h2>
+      <p class="section-subtitle">
+        Actively practicing Data Structures and Algorithms to strengthen problem-solving skills and prepare for technical interviews.
+      </p>
+
+      <div class="summary-box">
+        <h3>Coding Profiles</h3>
+
+        <p>
+          Solving coding challenges regularly on leading platforms to improve
+          logical thinking, algorithmic problem-solving, and coding proficiency.
+        </p>
+
+        <div class="links">
+          <a href="https://leetcode.com/u/BalajiCode08/" target="_blank" rel="noopener noreferrer">
+            LeetCode Profile
+          </a>
+
+          <a href="https://www.geeksforgeeks.org/profile/balaji_v08" target="_blank" rel="noopener noreferrer">
+            GeeksForGeeks Profile
+          </a>
+
+          <a href="https://www.hackerrank.com/profile/vjb08" target="_blank" rel="noopener noreferrer">
+            HackerRank Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-box">
+        <p>Email: <a href="mailto:balajivinothkumar.dev@gmail.com">balajivinothkumar.dev@gmail.com</a></p>
+        <p>Phone: +91-9500547928</p>
+        <p>Location: TamilNadu, India</p>
+
+        <div class="links">
+          <a href="https://github.com/balajiinfo8">GitHub</a>
+          <a href="https://linkedin.com/in/balaji-vinothkumar">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Balaji Vinothkumar 
+  </footer>
+  <script src="./script.js" ></script>
+  </body>
+  </html>
