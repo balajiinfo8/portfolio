@@ -22,6 +22,7 @@ This portfolio highlights work as a Backend Developer with a focus on Python, Dj
 
 - HTML5
 - CSS3
+- JavaScript
 - Responsive Web Design
 
 ## Projects Included
