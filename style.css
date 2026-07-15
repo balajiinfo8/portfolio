@@ -310,6 +310,59 @@ a {
       background: var(--bg-alt);
     }
 
+/* === LIVE CLOCK === */
+
+.live-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.live-clock .clock-dot {
+  color: var(--accent);
+}
+
+#clock-time {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* === SKILLS SECTION === */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-category {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  transition: 0.3s;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
 /* === RESPONSIVE DESIGN & MEDIA QUERIES === */
 
 /* Hide hamburger on desktop by default */
