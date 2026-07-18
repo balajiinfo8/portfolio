@@ -48,7 +48,7 @@ This portfolio highlights work as a Backend Developer with a focus on Python, Dj
 ## Resume Links
 
 - View Resume: [Google Drive View Link](https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing)
-- Download Resume: [Google Drive Download Link](https://drive.google.com/uc?export=download&id=1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz)
+- Download Resume: [Google Drive Download Link](https://drive.google.com/uc?export=download&id=1dSDemub-CeNqeviRze7WtMkKCnsvgdcZ)
 
 ## Folder Structure
 
