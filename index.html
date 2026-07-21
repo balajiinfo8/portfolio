@@ -23,6 +23,13 @@
               💻 Balaji V
           </a>
 
+          <div class="header-right-items">
+            <div class="live-clock" id="live-clock" aria-live="polite">
+              <span id="clock-date"></span>
+              <span class="clock-dot">•</span>
+              <span id="clock-time"></span>
+            </div>
+
           <button class="menu-toggle" id="hamburger-button">
              ☰
            </button>
@@ -32,11 +39,8 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
 
-            <li class="project-menu">
-              <a href="#">Projects</a>
-              <div class="drop-projects">
-                <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer">📂 GitHub Repository</a>
-              </div>
+            <li>
+              <a href="#projects">Projects</a>
             </li>
             <li class="dsa-menu">
               <a href="#">Coding Profiles</a>
@@ -86,6 +90,7 @@
               </button>
             </li>
           </ul>
+        </div>
         </div>  
 
       </nav>
@@ -96,18 +101,12 @@
 
       <h2>Python Backend Developer</h2>
 
-    <p class="hero-description">  
-      Building secure REST APIs, scalable backend systems, and AI-powered web applications using Django, FastAPI, and React.
-    </p>
-
-      <p>
-        Junior Backend Developer focused on REST APIs, backend services, real-time applications, and Python-based web development.
+      <p class="hero-description">
+        Junior Backend Developer focused on building secure REST APIs, scalable backend systems, and AI-powered web applications using Django, FastAPI, and Python.
       </p>
-
-      <div class="live-clock" id="live-clock" aria-live="polite">
-        <span id="clock-date"></span>
-        <span class="clock-dot">•</span>
-        <span id="clock-time"></span>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="https://github.com/balajiinfo8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
       </div>
     </div>
   </section>
@@ -117,7 +116,7 @@
 
     <h2 class="section-title">About Me</h2>
 
-    <div class="summary-box">
+    <div class="summary-box" style="max-width: 900px; margin: auto;">
 
       <h3>Professional Summary</h3>
 
@@ -128,14 +127,14 @@
       </p>
 
       <p>
-        My technical experience includes Django, Django REST Framework, FastAPI,
+        My technical expertise includes Django, Django REST Framework, FastAPI,
         RESTful APIs, JWT Authentication, WebSockets, AsyncIO, MySQL,
         PostgreSQL, API integration, and integrating AI-powered services
         using APIs such as Together AI (Meta Llama).
       </p>
 
       <p>
-        I enjoy designing clean backend architectures, developing RESTful
+        I enjoy designing clean backend architectures, developing RESTful an
         services, integrating AI capabilities into web applications, and
         solving programming challenges through Data Structures & Algorithms.
       </p>
@@ -235,33 +234,6 @@
 </section>
 <!-- Skills Section Ends Here -->
 
-  <!-- PROFILE -->
-<section>
-  <div class="container">
-
-    <h2 class="section-title">Technical Summary</h2>
-
-    <p class="section-subtitle">
-      Junior Backend Developer focused on API development, backend systems, and scalable application design.
-    </p>
-
-    <div class="summary-box">
-
-    <p>
-    Built backend applications using Django REST Framework and FastAPI with JWT authentication,
-    WebSockets, AsyncIO, and MySQL database integration.
-    </p>
-
-    <p>
-    Actively practicing Data Structures and Algorithms to improve problem-solving skills
-    and prepare for technical interviews.
-    </p>
-
-    </div>
-
-  </div>
-</section>
-
   <!-- EXPRIENCE -->
 
 <section id="experience">
@@ -273,11 +245,11 @@
 
       <h3>Python Backend Developer</h3>
 
-      <p><strong>Aparajitha Corporate Services Pvt. Ltd.</strong></p>
+      <strong>Aparajitha Corporate Services Pvt. Ltd.</strong>
 
-      <p>Intern (May 2024 – Aug 2024)</p>
+      <p class="meta">Intern (May 2023 – Aug 2023)</p>
 
-      <p>Associate Engineer (Sep 2024 – May 2025)</p>
+      <p class="meta">Associate Engineer (Sep 2023 – May 2024)</p>
 
       <ul>
         <li>Developed REST APIs using Django REST Framework.</li>
@@ -291,9 +263,9 @@
 
       <h3>Python Backend Developer Intern</h3>
 
-      <p><strong>Sumeru Digital Solutions</strong></p>
+      <strong>Sumeru Digital Solutions</strong>
 
-      <p>Python Backend Developer Intern (Dec 2025 – Mar 2026)</p>
+      <p class="meta">Python Backend Developer Intern (Dec 2022 – Mar 2023)</p>
 
       <ul>
         <li>Built FastAPI backend services.</li>
@@ -307,7 +279,7 @@
 </section>
 
   <!-- PROJECTS -->
-<section>
+<section id="projects">
   <div class="container">
 
     <h2 class="section-title">Projects</h2>
@@ -481,7 +453,7 @@
 </section>
 
   <!-- DSA Practice -->
-  <section>
+  <section id="dsa">
     <div class="container">
       <h2 class="section-title">DSA Practice</h2>
       <p class="section-subtitle">
@@ -514,7 +486,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section>
+  <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
 
@@ -532,7 +504,7 @@
   </section>
 
   <footer>
-   © 2026 Balaji Vinothkumar • All Rights Reserved
+   <p style="padding-top: 20px;">© 2024 Balaji Vinothkumar • All Rights Reserved</p>
   </footer>
   <script src="./script.js" ></script>
   </body>
