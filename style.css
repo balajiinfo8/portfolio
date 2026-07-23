@@ -107,6 +107,19 @@ html { scroll-behavior: smooth; }
   color: var(--text);;
 
 }
+
+/* --- Typing Animation --- */
+.hero h1.typing-effect::after {
+  content: '|';
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
@@ -236,6 +249,18 @@ a {
       background: rgba(56,189,248,0.12);
       border: 1px solid rgba(56,189,248,0.25);
       color: var(--accent);
+    }
+
+    .new-badge {
+      display: inline-block;
+      background-color: var(--accent);
+      color: var(--bg);
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 999px;
+      margin-left: 10px;
+      vertical-align: middle;
     }
 
     ul { padding-left: 18px; }
@@ -417,4 +442,17 @@ a {
     background: transparent;
     border-left: 1px solid var(--border);
   }
+}
+
+/* --- Scroll Animation --- */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

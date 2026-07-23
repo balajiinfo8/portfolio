@@ -59,4 +59,53 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClock();
     setInterval(updateClock, 1000);
   }
+
+  // --- Scroll Animation Logic ---
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, {
+    rootMargin: '0px',
+    threshold: 0.1 // Trigger when 10% of the element is visible
+  });
+
+  const sectionsToAnimate = document.querySelectorAll('.fade-in-section');
+  sectionsToAnimate.forEach(section => {
+    observer.observe(section);
+  });
+
+  // --- Typing Animation for Hero Title ---
+  const heroTitle = document.getElementById('hero-title');
+  if (heroTitle) {
+    const text = "Building Backend Solutions with Python";
+    let index = 0;
+    heroTitle.classList.add('typing-effect');
+
+    function type() {
+      if (index < text.length) {
+        heroTitle.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 60); // Adjust typing speed here
+      } else {
+        heroTitle.classList.remove('typing-effect'); // Remove cursor when done
+      }
+    }
+    type();
+  }
+
+  // --- Auto-update Footer Date ---
+  const lastUpdatedEl = document.getElementById('last-updated');
+  if (lastUpdatedEl) {
+    const lastModified = new Date(document.lastModified);
+    const formattedDate = new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long'
+    }).format(lastModified);
+    lastUpdatedEl.textContent = formattedDate;
+  }
+
 });
