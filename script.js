@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function applyTheme(theme) {
     if (theme === 'light') {
       document.body.classList.remove('dark-theme');
-      themeButton.textContent = "🌛";
+      if (themeButton) {
+        themeButton.textContent = "🌛";
+      }
     } else {
       document.body.classList.add('dark-theme');
-      themeButton.textContent = "🌞";
+      if (themeButton) {
+        themeButton.textContent = "🌞";
+      }
     }
   }
 
@@ -26,9 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTheme(savedTheme);
 
   // --- Responsive Navigation Logic ---
-  hamburgerButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  if (hamburgerButton && navLinks) {
+    hamburgerButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 
   // --- Live Date & Time Widget ---
   const clockDateEl = document.getElementById('clock-date');
