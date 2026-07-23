@@ -45,10 +45,6 @@ This portfolio highlights work as a Backend Developer with a focus on Python, Dj
 - Live Demo: [Task Manager Django](https://task-manager-django-iqs0.onrender.com)
 - GitHub: [task_manager_django](https://github.com/balajiinfo8/task_manager_django)
 
-## Resume Links
-
-- View Resume: [Google Drive View Link](https://drive.google.com/file/d/1ly_-ZmuCGWjcYK5Kvd6vrCNp6Qcu-Qsz/view?usp=sharing)
-- Download Resume: [Google Drive Download Link](https://drive.google.com/uc?export=download&id=1dSDemub-CeNqeviRze7WtMkKCnsvgdcZ)
 
 ## Folder Structure
 
