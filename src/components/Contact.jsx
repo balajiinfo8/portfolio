@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="contact-card">
             <div className="contact-icon">📧</div>
             <h3>Email</h3>
-            <p>balajivinothkumar.dev@gmail.com</p>
+            <p><small>balajivinothkumar.dev@gmail.com</small></p>
             <a
               href="mailto:balajivinothkumar.dev@gmail.com?subject=Job Opportunity"
               className="btn btn-primary contact-btn"
