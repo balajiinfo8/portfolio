@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="contact-card">
             <div className="contact-icon">📍</div>
             <h3>Location</h3>
-            <p>Karur, Tamil Nadu, India</p>
+            <p>bangalore, karnataka, India</p>
             <span className="contact-status">Open to Remote & Relocation</span>
           </div>
 
@@ -65,4 +65,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;
