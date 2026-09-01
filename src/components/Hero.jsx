@@ -7,13 +7,13 @@ const Hero = () => {
   useEffect(() => {
     let index = 0;
     const intervalId = setInterval(() => {
-      if (index < fullTitle.length) {
-        setTitle(prev => prev + fullTitle.charAt(index));
+      if (index <= fullTitle.length) {
+        setTitle(fullTitle.slice(0, index));
         index++;
       } else {
         clearInterval(intervalId);
       }
-    }, 60);
+    }, 50);
 
     return () => clearInterval(intervalId);
   }, []);
