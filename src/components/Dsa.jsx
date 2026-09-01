@@ -2,31 +2,23 @@ const Dsa = () => {
   return (
     <section id="dsa">
       <div className="container">
-        <h2 className="section-title">Coding & Cybersecurity Profiles</h2>
+        <h2 className="section-title">Coding & Problem Solving</h2>
         <p className="section-subtitle">
-          Actively practicing Data Structures, Algorithms, and Ethical Hacking to strengthen problem-solving and security engineering fundamentals.
+          Continuous algorithmic practice and practical security challenge platforms.
         </p>
 
         <div className="profiles-grid">
           {/* TryHackMe */}
-          <div className="summary-box profile-card thm-card fade-in-section">
+          <div className="summary-box profile-card fade-in-section">
             <div>
               <div className="profile-card-header">
-                <span className="thm-badge">🎯 Top 15% Global Rank</span>
-                <h3>TryHackMe</h3>
+                <span className="profile-card-icon">🛡️</span>
+                <span className="thm-badge font-mono">Top 15%</span>
               </div>
-              <p className="profile-metric">
-                Global Top 15% | 48+ Rooms Solved | Level 0x8
+              <h3>TryHackMe</h3>
+              <p className="profile-desc">
+                48+ Security Rooms, Web Attack Detection, and Pentesting CTFs.
               </p>
-              <p>
-                Actively solving CTF challenges, penetration testing labs, and web application security rooms on TryHackMe.
-              </p>
-              <div className="tag-row" style={{ marginTop: '12px' }}>
-                <span className="tag">CTF (Pickle Rick)</span>
-                <span className="tag">Pentesting</span>
-                <span className="tag">Web Attack Detection</span>
-                <span className="tag">Network Security</span>
-              </div>
             </div>
             <div className="links" style={{ marginTop: '20px' }}>
               <a
@@ -34,8 +26,9 @@ const Dsa = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
+                style={{ width: '100%', textAlign: 'center' }}
               >
-                🎯 TryHackMe Profile
+                View THM Profile
               </a>
             </div>
           </div>
@@ -44,21 +37,13 @@ const Dsa = () => {
           <div className="summary-box profile-card fade-in-section">
             <div>
               <div className="profile-card-header">
-                <span className="platform-badge">💡 Algorithmic Practice</span>
-                <h3>LeetCode</h3>
+                <span className="profile-card-icon">⚡</span>
+                <span className="platform-badge font-mono">Python DSA</span>
               </div>
-              <p className="profile-metric">
-                Active Problem Solving (Python) | Data Structures & Algorithms
+              <h3>LeetCode</h3>
+              <p className="profile-desc">
+                Algorithmic problem solving focusing on dynamic programming and graphs.
               </p>
-              <p>
-                Solving algorithmic challenges in Python focusing on arrays, dynamic programming, trees, graphs, and system design concepts.
-              </p>
-              <div className="tag-row" style={{ marginTop: '12px' }}>
-                <span className="tag">Arrays & Hashing</span>
-                <span className="tag">Dynamic Programming</span>
-                <span className="tag">Trees & Graphs</span>
-                <span className="tag">Python 3</span>
-              </div>
             </div>
             <div className="links" style={{ marginTop: '20px' }}>
               <a
@@ -66,8 +51,9 @@ const Dsa = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
+                style={{ width: '100%', textAlign: 'center' }}
               >
-                💻 LeetCode Profile
+                View LeetCode Profile
               </a>
             </div>
           </div>
@@ -76,21 +62,13 @@ const Dsa = () => {
           <div className="summary-box profile-card fade-in-section">
             <div>
               <div className="profile-card-header">
-                <span className="platform-badge">📚 CS Fundamentals</span>
-                <h3>GeeksforGeeks</h3>
+                <span className="profile-card-icon">🌿</span>
+                <span className="platform-badge font-mono">Algorithms</span>
               </div>
-              <p className="profile-metric">
-                Core Algorithmic Challenges & Practice
+              <h3>GeeksforGeeks</h3>
+              <p className="profile-desc">
+                Core data structures, tree traversals, and algorithmic problem sheets.
               </p>
-              <p>
-                Practicing core computer science fundamentals, data structure implementations, and algorithmic problem-solving logic.
-              </p>
-              <div className="tag-row" style={{ marginTop: '12px' }}>
-                <span className="tag">Data Structures</span>
-                <span className="tag">Algorithms</span>
-                <span className="tag">CS Concepts</span>
-                <span className="tag">Backend Logic</span>
-              </div>
             </div>
             <div className="links" style={{ marginTop: '20px' }}>
               <a
@@ -98,8 +76,9 @@ const Dsa = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
+                style={{ width: '100%', textAlign: 'center' }}
               >
-                💚 GeeksforGeeks Profile
+                View GFG Profile
               </a>
             </div>
           </div>
@@ -108,21 +87,13 @@ const Dsa = () => {
           <div className="summary-box profile-card fade-in-section">
             <div>
               <div className="profile-card-header">
-                <span className="platform-badge">🏆 Skill Certification</span>
-                <h3>HackerRank</h3>
+                <span className="profile-card-icon">🎖️</span>
+                <span className="platform-badge font-mono">Verified</span>
               </div>
-              <p className="profile-metric">
-                Problem Solving & Python Assessments
+              <h3>HackerRank</h3>
+              <p className="profile-desc">
+                Standardized assessments in Python proficiency and SQL relational queries.
               </p>
-              <p>
-                Completing domain-specific skill assessments, algorithms, and verified Python programming certifications.
-              </p>
-              <div className="tag-row" style={{ marginTop: '12px' }}>
-                <span className="tag">Python Certificate</span>
-                <span className="tag">Problem Solving</span>
-                <span className="tag">Algorithmic Tests</span>
-                <span className="tag">Logic Verification</span>
-              </div>
             </div>
             <div className="links" style={{ marginTop: '20px' }}>
               <a
@@ -130,8 +101,9 @@ const Dsa = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
+                style={{ width: '100%', textAlign: 'center' }}
               >
-                ⭐ HackerRank Profile
+                View HackerRank
               </a>
             </div>
           </div>
