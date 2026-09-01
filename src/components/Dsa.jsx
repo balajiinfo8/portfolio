@@ -9,42 +9,26 @@ const Dsa = () => {
 
         <div className="profiles-grid">
           {/* TryHackMe */}
-          <div className="summary-box thm-card fade-in-section">
-            <div className="thm-header">
-              <span className="thm-badge">🎯 Top 15% Global Rank</span>
-              <h3>TryHackMe - Cybersecurity & Ethical Hacking</h3>
-            </div>
-            <p className="profile-metric">
-              Global Top 15% | 48+ Rooms Solved | Level 0x8
-            </p>
-            <p>
-              Actively solving CTF challenges, penetration testing labs, and web application security rooms on TryHackMe.
-            </p>
-            <div className="thm-stats-grid">
-              <div className="thm-stat">
-                <span className="stat-value">Top 15%</span>
-                <span className="stat-label">Global Rank</span>
+          <div className="summary-box profile-card thm-card fade-in-section">
+            <div>
+              <div className="profile-card-header">
+                <span className="thm-badge">🎯 Top 15% Global Rank</span>
+                <h3>TryHackMe</h3>
               </div>
-              <div className="thm-stat">
-                <span className="stat-value">48+</span>
-                <span className="stat-label">Rooms Solved</span>
-              </div>
-              <div className="thm-stat">
-                <span className="stat-value">8</span>
-                <span className="stat-label">Badges</span>
-              </div>
-              <div className="thm-stat">
-                <span className="stat-value">0x8</span>
-                <span className="stat-label">Level</span>
+              <p className="profile-metric">
+                Global Top 15% | 48+ Rooms Solved | Level 0x8
+              </p>
+              <p>
+                Actively solving CTF challenges, penetration testing labs, and web application security rooms on TryHackMe.
+              </p>
+              <div className="tag-row" style={{ marginTop: '12px' }}>
+                <span className="tag">CTF (Pickle Rick)</span>
+                <span className="tag">Pentesting</span>
+                <span className="tag">Web Attack Detection</span>
+                <span className="tag">Network Security</span>
               </div>
             </div>
-            <div className="tag-row" style={{ marginTop: '12px' }}>
-              <span className="tag">CTF (Pickle Rick)</span>
-              <span className="tag">Pentesting Fundamentals</span>
-              <span className="tag">Web Attack Detection</span>
-              <span className="tag">Network Security</span>
-            </div>
-            <div className="links" style={{ marginTop: '16px' }}>
+            <div className="links" style={{ marginTop: '20px' }}>
               <a
                 href="https://tryhackme.com/p/balajivinothkumar08"
                 target="_blank"
@@ -59,22 +43,31 @@ const Dsa = () => {
           {/* LeetCode */}
           <div className="summary-box profile-card fade-in-section">
             <div>
-              <h3>LeetCode</h3>
+              <div className="profile-card-header">
+                <span className="platform-badge">💡 Algorithmic Practice</span>
+                <h3>LeetCode</h3>
+              </div>
               <p className="profile-metric">
                 Active Problem Solving (Python) | Data Structures & Algorithms
               </p>
               <p>
-                Solving algorithmic challenges in Python focusing on arrays, dynamic programming, trees, graphs, and core problem-solving techniques.
+                Solving algorithmic challenges in Python focusing on arrays, dynamic programming, trees, graphs, and system design concepts.
               </p>
+              <div className="tag-row" style={{ marginTop: '12px' }}>
+                <span className="tag">Arrays & Hashing</span>
+                <span className="tag">Dynamic Programming</span>
+                <span className="tag">Trees & Graphs</span>
+                <span className="tag">Python 3</span>
+              </div>
             </div>
-            <div className="links" style={{ marginTop: '16px' }}>
+            <div className="links" style={{ marginTop: '20px' }}>
               <a
                 href="https://leetcode.com/u/BalajiCode08/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                LeetCode Profile
+                💻 LeetCode Profile
               </a>
             </div>
           </div>
@@ -82,22 +75,31 @@ const Dsa = () => {
           {/* GeeksforGeeks */}
           <div className="summary-box profile-card fade-in-section">
             <div>
-              <h3>GeeksforGeeks</h3>
+              <div className="profile-card-header">
+                <span className="platform-badge">📚 CS Fundamentals</span>
+                <h3>GeeksforGeeks</h3>
+              </div>
               <p className="profile-metric">
                 Core Algorithmic Challenges & Practice
               </p>
               <p>
-                Practicing computer science fundamentals, data structure implementations, and core backend logic.
+                Practicing core computer science fundamentals, data structure implementations, and algorithmic problem-solving logic.
               </p>
+              <div className="tag-row" style={{ marginTop: '12px' }}>
+                <span className="tag">Data Structures</span>
+                <span className="tag">Algorithms</span>
+                <span className="tag">CS Concepts</span>
+                <span className="tag">Backend Logic</span>
+              </div>
             </div>
-            <div className="links" style={{ marginTop: '16px' }}>
+            <div className="links" style={{ marginTop: '20px' }}>
               <a
                 href="https://www.geeksforgeeks.org/profile/balaji_v08"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                GeeksforGeeks Profile
+                💚 GeeksforGeeks Profile
               </a>
             </div>
           </div>
@@ -105,22 +107,31 @@ const Dsa = () => {
           {/* HackerRank */}
           <div className="summary-box profile-card fade-in-section">
             <div>
-              <h3>HackerRank</h3>
+              <div className="profile-card-header">
+                <span className="platform-badge">🏆 Skill Certification</span>
+                <h3>HackerRank</h3>
+              </div>
               <p className="profile-metric">
                 Problem Solving & Python Assessments
               </p>
               <p>
-                Completing domain-specific skill assessments, algorithms, and Python programming certifications.
+                Completing domain-specific skill assessments, algorithms, and verified Python programming certifications.
               </p>
+              <div className="tag-row" style={{ marginTop: '12px' }}>
+                <span className="tag">Python Certificate</span>
+                <span className="tag">Problem Solving</span>
+                <span className="tag">Algorithmic Tests</span>
+                <span className="tag">Logic Verification</span>
+              </div>
             </div>
-            <div className="links" style={{ marginTop: '16px' }}>
+            <div className="links" style={{ marginTop: '20px' }}>
               <a
                 href="https://www.hackerrank.com/profile/vjb08"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                HackerRank Profile
+                ⭐ HackerRank Profile
               </a>
             </div>
           </div>
