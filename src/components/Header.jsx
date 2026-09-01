@@ -97,22 +97,43 @@ const Header = ({ theme, toggleTheme }) => {
           </li>
 
           <li className={`dsa-menu ${activeDropdown === 'dsa' ? 'dropdown-open' : ''}`}>
-            <button
-              type="button"
-              className="dropdown-trigger"
-              onClick={() => toggleDropdown('dsa')}
-              aria-expanded={activeDropdown === 'dsa'}
-            >
-              Coding Profiles <span className="dropdown-arrow">{activeDropdown === 'dsa' ? '▲' : '▼'}</span>
-            </button>
+            <div className="contact-trigger-wrapper">
+              <a
+                href="#dsa"
+                className="contact-main-link"
+                onClick={() => handleNavLinkClick('dsa')}
+              >
+                Coding Profiles
+              </a>
+              <button
+                type="button"
+                className="dropdown-trigger-toggle"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleDropdown('dsa');
+                }}
+                aria-label="Toggle coding profiles links"
+                aria-expanded={activeDropdown === 'dsa'}
+              >
+                <span className="dropdown-arrow">{activeDropdown === 'dsa' ? '▲' : '▼'}</span>
+              </button>
+            </div>
+
             <div className="dropdown-dsa">
               <a
-                href="https://www.geeksforgeeks.org/profile/balaji_v08"
+                href="#dsa"
+                className="dropdown-section-link"
+                onClick={() => handleNavLinkClick('dsa')}
+              >
+                📍 Go to Profiles Section
+              </a>
+              <a
+                href="https://tryhackme.com/p/balajivinothkumar08"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
-                GeeksForGeeks
+                🎯 TryHackMe (Top 15%)
               </a>
               <a
                 href="https://leetcode.com/u/BalajiCode08/"
@@ -121,6 +142,14 @@ const Header = ({ theme, toggleTheme }) => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 LeetCode
+              </a>
+              <a
+                href="https://www.geeksforgeeks.org/profile/balaji_v08"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                GeeksForGeeks
               </a>
               <a
                 href="https://www.hackerrank.com/profile/vjb08"

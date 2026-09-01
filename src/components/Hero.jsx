@@ -25,10 +25,10 @@ const Hero = () => {
           {title}
         </h1>
 
-        <h2>Python Backend Developer</h2>
+        <h2>Python Backend Developer | Django & FastAPI</h2>
 
         <p className="hero-description">
-          Junior Backend Developer focused on building secure REST APIs, scalable backend systems, and AI-powered web applications using Django, FastAPI, and Python.
+          Backend Developer with 1+ years of industry experience specializing in secure REST APIs, scalable asynchronous architectures, and AI/Speech integration using Django, FastAPI, and Python. Top 15% globally on TryHackMe.
         </p>
         <div className="btn-group">
           <a href="#projects" className="btn btn-primary">View My Projects</a>

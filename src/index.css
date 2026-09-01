@@ -355,11 +355,92 @@ section {
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover,
-.summary-box:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.12);
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.thm-card {
+  border-color: rgba(56, 189, 248, 0.35);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thm-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.thm-header h3 {
+  margin: 0;
+}
+
+.thm-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+}
+
+.thm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+  padding: 14px 10px;
+  background: var(--bg-alt);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.thm-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-metric {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin: 6px 0 10px 0;
+  padding: 4px 10px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
 }
 
 .project-list {
@@ -709,7 +790,13 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
-  .contact-grid {
+  .contact-grid,
+  .profiles-grid {
     grid-template-columns: 1fr;
+  }
+
+  .thm-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }

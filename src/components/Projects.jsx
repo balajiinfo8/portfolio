@@ -7,27 +7,48 @@ const Projects = () => {
           Real-world projects demonstrating Django, FastAPI, REST APIs, AI integration, authentication, and modern frontend development.
         </p>
         <div className="project-list">
-          {/* AskAI */}
+          {/* Real-Time Voice Translation System */}
+          <div className="project-card fade-in-section">
+            <h3>Real-Time Voice Translation System</h3>
+            <p className="meta">
+              FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech Services
+            </p>
+            <ul>
+              <li>Built a low-latency bidirectional streaming architecture utilizing WebSockets and AsyncIO for real-time audio capture and translation.</li>
+              <li>Integrated OpenAI Whisper models and Azure Speech Services for rapid speech-to-text transcription and multilingual synthesis.</li>
+            </ul>
+            <div className="tag-row">
+              <span className="tag">FastAPI</span>
+              <span className="tag">WebSockets</span>
+              <span className="tag">AsyncIO</span>
+              <span className="tag">Whisper</span>
+              <span className="tag">Azure Speech</span>
+              <span className="tag">JavaScript</span>
+            </div>
+            <div className="links">
+              <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank" rel="noopener noreferrer">
+                📂 Source Code
+              </a>
+            </div>
+          </div>
+
+          {/* AskAI Assistant */}
           <div className="project-card fade-in-section">
             <h3>AskAI Assistant</h3>
             <p className="meta">
-              Django | Django REST Framework | Together AI (Meta Llama)
+              Django | DRF | Together AI (Meta Llama) | PostgreSQL
             </p>
             <ul>
-              <li>Built RESTful APIs using Django REST Framework.</li>
-              <li>Integrated Together AI (Meta Llama) APIs to generate AI-powered responses.</li>
-              <li>Designed a modular backend architecture following Django best practices.</li>
+              <li>Designed a modular REST API backend leveraging Together AI (Meta Llama) endpoints for dynamic conversational responses.</li>
+              <li>Implemented token usage rate limiting, conversation history caching, and structured JSON output parsing.</li>
             </ul>
             <div className="tag-row">
               <span className="tag">Django</span>
               <span className="tag">Django REST Framework</span>
+              <span className="tag">PostgreSQL</span>
+              <span className="tag">Together AI</span>
               <span className="tag">REST API</span>
-              <span className="tag">AI Integration</span>
-              <span className="tag">HTML5</span>
-              <span className="tag">CSS3</span>
-              <span className="tag">Bootstrap</span>
               <span className="tag">JavaScript</span>
-              <span className="tag">DTL</span>
             </div>
             <div className="links">
               <a href="https://askai-django-assistant.onrender.com/" target="_blank" rel="noopener noreferrer">
@@ -39,16 +60,15 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Task Manager */}
+          {/* Task Management API */}
           <div className="project-card fade-in-section">
             <h3>Task Management API</h3>
             <p className="meta">
-              Django | Django REST Framework | JWT | MySQL
+              Django | DRF | JWT | MySQL
             </p>
             <ul>
-              <li>Developed secure RESTful CRUD APIs using Django REST Framework.</li>
-              <li>Implemented JWT authentication for protected API endpoints.</li>
-              <li>Designed RESTful CRUD operations with MySQL for efficient task management.</li>
+              <li>Engineered production-ready CRUD endpoints with full role-based access control (RBAC) and secure JWT authentication.</li>
+              <li>Configured automated data validation schemas and optimized relational foreign-key indexing in MySQL.</li>
             </ul>
             <div className="tag-row">
               <span className="tag">Django</span>
@@ -56,11 +76,7 @@ const Projects = () => {
               <span className="tag">JWT</span>
               <span className="tag">MySQL</span>
               <span className="tag">REST API</span>
-              <span className="tag">HTML5</span>
-              <span className="tag">CSS3</span>
-              <span className="tag">Bootstrap</span>
-              <span className="tag">JavaScript</span>
-              <span className="tag">DTL</span>
+              <span className="tag">RBAC</span>
             </div>
             <div className="links">
               <a href="https://task-manager-django-iqs0.onrender.com" target="_blank" rel="noopener noreferrer">
@@ -72,47 +88,15 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Voice Translation */}
-          <div className="project-card fade-in-section">
-            <h3>Real-Time Voice Translation System</h3>
-            <p className="meta">
-              FastAPI | WebSockets | AsyncIO | Whisper | Azure Speech Services
-            </p>
-            <ul>
-              <li>Integrated Whisper and Azure Speech Services for speech recognition and translation.</li>
-              <li>Built real-time streaming communication using WebSockets.</li>
-              <li>Implemented concurrent request handling with AsyncIO.</li>
-              <li>Developed a real-time speech-to-text processing pipeline using FastAPI.</li>
-            </ul>
-            <div className="tag-row">
-              <span className="tag">FastAPI</span>
-              <span className="tag">WebSockets</span>
-              <span className="tag">AsyncIO</span>
-              <span className="tag">Whisper</span>
-              <span className="tag">Azure Speech</span>
-              <span className="tag">HTML5</span>
-              <span className="tag">CSS3</span>
-              <span className="tag">Bootstrap</span>
-              <span className="tag">JavaScript</span>
-            </div>
-            <div className="links">
-              <a href="https://github.com/balajiinfo8/FastAPI-Live-Translator" target="_blank" rel="noopener noreferrer">
-                📂 Source Code
-              </a>
-            </div>
-          </div>
-
-          {/* React */}
+          {/* Movie Recommendation System */}
           <div className="project-card fade-in-section">
             <h3>Movie Recommendation System</h3>
             <p className="meta">
-              React.js | JavaScript | Vite | REST API
+              React.js | Vite | REST API
             </p>
             <ul>
-              <li>Built a responsive movie recommendation application using React.js.</li>
-              <li>Integrated a public movie REST API to fetch and display movie information dynamically.</li>
-              <li>Implemented reusable React components using Hooks for efficient state management.</li>
-              <li>Deployed the application using GitHub Pages.</li>
+              <li>Developed a responsive web interface utilizing React Hooks for state management and dynamic client-side filtering.</li>
+              <li>Consumed third-party RESTful movie data feeds with debounced search functionality.</li>
             </ul>
             <div className="tag-row">
               <span className="tag">React.js</span>
@@ -120,9 +104,6 @@ const Projects = () => {
               <span className="tag">REST API</span>
               <span className="tag">React Hooks</span>
               <span className="tag">Vite</span>
-              <span className="tag">HTML5</span>
-              <span className="tag">CSS3</span>
-              <span className="tag">GitHub Pages</span>
             </div>
             <div className="links">
               <a href="https://balajiinfo8.github.io/React-MovieRecommendationApp/" target="_blank" rel="noopener noreferrer">

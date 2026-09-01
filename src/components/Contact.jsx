@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="contact-card">
             <div className="contact-icon">📍</div>
             <h3>Location</h3>
-            <p>bangalore, karnataka, India</p>
+            <p>Bangalore, Karnataka, India</p>
             <span className="contact-status">Open to Remote & Relocation</span>
           </div>
 
@@ -56,6 +56,14 @@ const Contact = () => {
                 className="btn btn-secondary"
               >
                 💼 LinkedIn
+              </a>
+              <a
+                href="https://tryhackme.com/p/balajivinothkumar08"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                🎯 TryHackMe
               </a>
             </div>
           </div>

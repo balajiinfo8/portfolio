@@ -17,9 +17,12 @@ const About = () => {
             using APIs such as Together AI (Meta Llama).
           </p>
           <p>
-            I enjoy designing clean backend architectures, developing RESTful an
-            services, integrating AI capabilities into web applications, and
+            I enjoy designing clean backend architectures, developing RESTful web
+            services, integrating AI capabilities into applications, and
             solving programming challenges through Data Structures & Algorithms.
+          </p>
+          <p>
+            Additionally, I am passionate about cybersecurity, maintaining a <strong>Top 15% global rank on TryHackMe</strong> with 48+ completed security rooms and CTF challenges in penetration testing and web attack detection.
           </p>
           <p>
             Currently, I am expanding my frontend development skills with React
