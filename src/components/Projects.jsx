@@ -2,15 +2,18 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 className="section-title">
+          <span className="accent-hash">#</span> Featured Projects
+        </h2>
         <p className="section-subtitle">
-          Production-focused applications showcasing real-time data, REST APIs, and AI integrations.
+          Production-focused applications showcasing real-time data streaming, REST APIs, and AI integrations.
         </p>
 
         <div className="project-list">
           {/* Real-Time Voice Translation System */}
           <div className="project-card fade-in-section">
             <div>
+              <div className="project-category-badge">⚡ Real-Time Streaming & AI</div>
               <h3>Real-Time Voice Translation System</h3>
               <p className="project-desc">
                 Engineered a low-latency bidirectional streaming architecture utilizing WebSockets and AsyncIO for real-time speech capture, transcription, and multi-language translation via Whisper and Azure Speech.
@@ -39,6 +42,7 @@ const Projects = () => {
           {/* AskAI Assistant */}
           <div className="project-card fade-in-section">
             <div>
+              <div className="project-category-badge">🤖 LLM & Conversation API</div>
               <h3>AskAI Assistant</h3>
               <p className="project-desc">
                 Modular REST API backend integrating Together AI (Meta Llama) endpoints for dynamic conversational responses, featuring token rate-limiting, history caching, and structured JSON output parsing.
@@ -75,6 +79,7 @@ const Projects = () => {
           {/* Task Management API */}
           <div className="project-card fade-in-section">
             <div>
+              <div className="project-category-badge">🛡️ REST API & RBAC Auth</div>
               <h3>Task Management API</h3>
               <p className="project-desc">
                 Production-grade CRUD API with complete Role-Based Access Control (RBAC), JWT authentication, automated schema validations, and relational MySQL query optimizations.
@@ -111,6 +116,7 @@ const Projects = () => {
           {/* Movie Recommendation App */}
           <div className="project-card fade-in-section">
             <div>
+              <div className="project-category-badge">💻 Modern Full-Stack UI</div>
               <h3>Movie Recommendation App</h3>
               <p className="project-desc">
                 Responsive client-side interface built with React.js and Vite, consuming external RESTful movie APIs with debounced search functionality and custom React hook state management.

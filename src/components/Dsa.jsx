@@ -2,7 +2,9 @@ const Dsa = () => {
   return (
     <section id="dsa">
       <div className="container">
-        <h2 className="section-title">Coding & Problem Solving</h2>
+        <h2 className="section-title">
+          <span className="accent-hash">#</span> Coding & Problem Solving
+        </h2>
         <p className="section-subtitle">
           Continuous algorithmic practice and practical security challenge platforms.
         </p>

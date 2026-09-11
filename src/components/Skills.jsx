@@ -2,7 +2,9 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="container">
-        <h2 className="section-title">Technical Skills</h2>
+        <h2 className="section-title">
+          <span className="accent-hash">#</span> Technical Skills
+        </h2>
         <p className="section-subtitle">
           Core technologies I use to build scalable systems and APIs.
         </p>
