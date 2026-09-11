@@ -38,6 +38,14 @@ const Hero = () => {
             View My Projects
           </a>
           <a
+            href="https://drive.google.com/file/d/161kmV3MioutarL0hTgoka_orGEPFZvMw/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+          >
+            📄 View Resume
+          </a>
+          <a
             href="https://github.com/balajiinfo8"
             target="_blank"
             rel="noopener noreferrer"
