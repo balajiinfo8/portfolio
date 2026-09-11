@@ -38,7 +38,7 @@ const Hero = () => {
             View My Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/161kmV3MioutarL0hTgoka_orGEPFZvMw/view"
+            href="https://drive.google.com/file/d/16LE3eV705iuLHyBxt7TbSoWaWoJeUCM3/view"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary"
