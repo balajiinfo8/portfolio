@@ -173,7 +173,7 @@ const Header = ({ theme, toggleTheme }) => {
             </button>
             <div className="dropdown-resume">
               <a
-                href="https://drive.google.com/uc?export=download&id=16LE3eV705iuLHyBxt7TbSoWaWoJeUCM3"
+                href="https://drive.google.com/uc?export=download&id=10SLv1_MPH9A9UInrvp2EUm5BqQF7KWbr"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
@@ -181,7 +181,7 @@ const Header = ({ theme, toggleTheme }) => {
                 ⬇️ Download
               </a>
               <a
-                href="https://drive.google.com/file/d/16LE3eV705iuLHyBxt7TbSoWaWoJeUCM3/view"
+                href="https://drive.google.com/file/d/10SLv1_MPH9A9UInrvp2EUm5BqQF7KWbr/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
