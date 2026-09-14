@@ -56,7 +56,7 @@ const Skills = () => {
           <div className="skill-category skill-category-wide fade-in-section">
             <h3 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>🛡️ Cybersecurity & Defense</span>
-              <span className="thm-badge" style={{ fontSize: '0.75rem', padding: '3px 8px' }}>Top 15% TryHackMe</span>
+              <span className="thm-badge" style={{ fontSize: '0.75rem', padding: '3px 8px' }}>Top 10% TryHackMe</span>
             </h3>
             <div className="tag-row">
               <span className="tag">OWASP Top 10</span>

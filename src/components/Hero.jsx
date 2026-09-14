@@ -37,7 +37,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description">
-          Backend Developer with 1+ years of hands-on experience across associate engineering and internship roles, specializing in secure REST APIs, scalable asynchronous architectures, and AI/Speech integration. Ranked in the Top 15% globally on TryHackMe.
+          Backend Developer with 1+ years of hands-on experience across associate engineering and internship roles, specializing in secure REST APIs, scalable asynchronous architectures, and AI/Speech integration. Ranked in the Top 10% globally on TryHackMe.
         </p>
 
         <div className="btn-group">
@@ -73,7 +73,7 @@ const Hero = () => {
           <div className="stat-item">
             <span className="stat-icon">🛡️</span>
             <div>
-              <div className="stat-number">Top 15%</div>
+              <div className="stat-number">Top 10%</div>
               <div className="stat-title">TryHackMe Global</div>
             </div>
           </div>

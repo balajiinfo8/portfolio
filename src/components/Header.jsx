@@ -133,7 +133,7 @@ const Header = ({ theme, toggleTheme }) => {
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
-                🎯 TryHackMe (Top 15%)
+                🎯 TryHackMe (Top 10%)
               </a>
               <a
                 href="https://leetcode.com/u/BalajiCode08/"

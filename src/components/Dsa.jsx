@@ -15,11 +15,11 @@ const Dsa = () => {
             <div>
               <div className="profile-card-header">
                 <span className="profile-card-icon">🛡️</span>
-                <span className="thm-badge font-mono">Top 15%</span>
+                <span className="thm-badge font-mono">Top 10%</span>
               </div>
               <h3>TryHackMe</h3>
               <p className="profile-desc">
-                48+ Security Rooms, Web Attack Detection, and Pentesting CTFs.
+                53+ Security Rooms, 9 Badges, Web Attack Detection, and Pentesting CTFs.
               </p>
             </div>
             <div className="links" style={{ marginTop: '20px' }}>

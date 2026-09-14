@@ -13,7 +13,7 @@ const About = () => {
             My core technical stack centers around <strong>Django</strong>, <strong>Django REST Framework</strong>, <strong>FastAPI</strong>, relational databases (<strong>PostgreSQL, MySQL</strong>), <strong>WebSockets</strong>, and <strong>AsyncIO</strong> for high-concurrency streaming.
           </p>
           <p>
-            Beyond core backend engineering, I maintain a strong focus on cybersecurity and application defense, holding a <strong>Top 15% Global Rank on TryHackMe</strong> with 48+ solved security rooms and CTFs in penetration testing and web attack detection.
+            Beyond core backend engineering, I maintain a strong focus on cybersecurity and application defense, holding a <strong>Top 10% Global Rank on TryHackMe</strong> with 53+ solved security rooms and CTFs in penetration testing and web attack detection.
           </p>
         </div>
       </div>
