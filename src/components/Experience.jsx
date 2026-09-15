@@ -6,24 +6,26 @@ const Experience = () => {
           <span className="accent-hash">#</span> Professional Experience
         </h2>
         <p className="section-subtitle">
-          1+ years of backend engineering across full-time and internship roles building high-concurrency APIs and services.
+          Hands-on backend engineering experience across software engineering and internship roles.
         </p>
 
         <div className="timeline-container">
+          {/* Role 1: Sumeru Internship */}
           <div className="timeline-item fade-in-section">
             <div className="timeline-dot"></div>
             <div className="experience-card">
               <div className="experience-header">
                 <div>
                   <h3>Python Backend Developer Intern</h3>
-                  <h4 className="company-name">Sumeru Digital Solutions</h4>
+                  <h4 className="company-name">Sumeru Digital Solutions Pvt. Ltd.</h4>
                 </div>
                 <span className="date-badge">Dec 2025 – Mar 2026</span>
               </div>
               <ul>
-                <li>Engineered high-throughput asynchronous backend services using <strong>FastAPI</strong> and <strong>AsyncIO</strong>.</li>
-                <li>Architected an end-to-end real-time speech translation pipeline integrating <strong>Whisper</strong> and <strong>Azure Speech Services</strong> via <strong>WebSockets</strong>.</li>
-                <li>Implemented robust session state handling, low-latency audio stream processing, and secure <strong>CORS middleware</strong>.</li>
+                <li>Worked on backend services using Python and FastAPI.</li>
+                <li>Worked with AsyncIO and WebSockets for real-time asynchronous communication.</li>
+                <li>Worked on a real-time speech translation system integrating Whisper and Azure Speech Services.</li>
+                <li>Implemented session handling, audio-stream processing, and CORS configuration.</li>
               </ul>
               <div className="tag-row" style={{ marginTop: '14px' }}>
                 <span className="tag">FastAPI</span>
@@ -35,27 +37,58 @@ const Experience = () => {
             </div>
           </div>
 
+          {/* Role 2: Aparajitha Associate Engineer */}
           <div className="timeline-item fade-in-section">
             <div className="timeline-dot"></div>
             <div className="experience-card">
               <div className="experience-header">
                 <div>
-                  <h3>Associate Engineer / Backend Intern</h3>
+                  <h3>Associate Engineer / Backend Developer</h3>
                   <h4 className="company-name">Aparajitha Corporate Services Pvt. Ltd.</h4>
                 </div>
-                <span className="date-badge">May 2024 – May 2025</span>
+                <span className="date-badge">Sep 2024 – May 2025</span>
               </div>
               <ul>
-                <li>Architected and deployed scalable RESTful APIs using <strong>Django REST Framework</strong> for compliance automation workflows.</li>
-                <li>Designed relational database schemas and optimized <strong>MySQL</strong> queries and indexes to minimize response latencies.</li>
-                <li>Integrated external verification APIs with end-to-end exception logging and <strong>JWT-based endpoint security</strong>.</li>
+                <li>Developed backend functionality using Python, Django, and Django REST Framework.</li>
+                <li>Built and maintained REST APIs for business workflows.</li>
+                <li>Worked with MySQL and Django ORM for database operations.</li>
+                <li>Implemented JWT authentication and integrated external APIs.</li>
+                <li>Worked with Postman, Git, Jira, and SonarQube as part of backend development and testing workflows.</li>
               </ul>
               <div className="tag-row" style={{ marginTop: '14px' }}>
+                <span className="tag">Python</span>
                 <span className="tag">Django</span>
                 <span className="tag">DRF</span>
                 <span className="tag">MySQL</span>
                 <span className="tag">JWT Auth</span>
-                <span className="tag">RESTful APIs</span>
+                <span className="tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Role 3: Aparajitha Internship */}
+          <div className="timeline-item fade-in-section">
+            <div className="timeline-dot"></div>
+            <div className="experience-card">
+              <div className="experience-header">
+                <div>
+                  <h3>Django Backend Developer Intern</h3>
+                  <h4 className="company-name">Aparajitha Corporate Services Pvt. Ltd.</h4>
+                </div>
+                <span className="date-badge">May 2024 – Aug 2024</span>
+              </div>
+              <ul>
+                <li>Worked with Python and Django on backend development tasks.</li>
+                <li>Developed and tested REST API functionality using Django REST Framework.</li>
+                <li>Worked with MySQL and Django ORM for backend data operations.</li>
+                <li>Assisted with backend features and API testing.</li>
+              </ul>
+              <div className="tag-row" style={{ marginTop: '14px' }}>
+                <span className="tag">Python</span>
+                <span className="tag">Django</span>
+                <span className="tag">DRF</span>
+                <span className="tag">MySQL</span>
+                <span className="tag">REST APIs</span>
               </div>
             </div>
           </div>

@@ -67,7 +67,7 @@ const Hero = () => {
             <span className="stat-icon">💼</span>
             <div>
               <div className="stat-number">1+ Years</div>
-              <div className="stat-title">Industry Experience</div>
+              <div className="stat-title">Backend Experience</div>
             </div>
           </div>
           <div className="stat-item">
