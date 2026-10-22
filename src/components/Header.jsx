@@ -172,6 +172,7 @@ const Header = ({ theme, toggleTheme }) => {
               📄 Resume <span className="dropdown-arrow">{activeDropdown === 'resume' ? '▲' : '▼'}</span>
             </button>
             <div className="dropdown-resume">
+
               <a
                 href="https://drive.google.com/uc?export=download&id=1HRWw9idOqIhHqcWk4xZElloz6pue3aip"
                 target="_blank"
@@ -180,6 +181,7 @@ const Header = ({ theme, toggleTheme }) => {
               >
                 ⬇️ Download
               </a>
+
               <a
                 href="https://drive.google.com/file/d/1HRWw9idOqIhHqcWk4xZElloz6pue3aip/view"
                 target="_blank"
@@ -188,6 +190,7 @@ const Header = ({ theme, toggleTheme }) => {
               >
                 👁️ View
               </a>
+
             </div>
           </li>
 
