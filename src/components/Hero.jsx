@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="hero-background-glow"></div>
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <span className="hero-badge">
-          <span className="pulse-dot"></span> Available for Backend & Full-Stack Opportunities
+          <span className="pulse-dot"></span> Available for Backend & AI,ML Opportunities
         </span>
 
         <h1 id="hero-title" className={title.length < fullTitle.length ? 'typing-effect' : ''}>
