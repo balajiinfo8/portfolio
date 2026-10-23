@@ -56,7 +56,7 @@ const Hero = () => {
             href="https://github.com/balajiinfo8"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary"
+            className="btn btn-info"
           >
             🐙 GitHub Profile
           </a>
